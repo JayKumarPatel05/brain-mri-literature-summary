@@ -1,8 +1,9 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
 <title>Scope of Comprehensive Exam for Jay Kumar Patel</title>
 <style>
 :root {
@@ -57,474 +58,502 @@ td.year { font-weight:800; color:#475569; }
 </head>
 <body>
 <header class="hero">
-  <div class="container">
-    <div class="smallcaps">PhD Biotechnology · Lakehead University</div>
-    <h1>Scope of Comprehensive Exam for Jay Kumar Patel</h1>
-    <p class="supervisor">Supervisor: Dr. T. Akilan</p>
-    <p class="subtitle">This page outlines the literature scope for the comprehensive examination, with emphasis on brain MRI segmentation and related methodological foundations. The selected readings are organized by theme to support discussion on segmentation accuracy, annotation burden, generalization, computational feasibility, and evaluation practice in brain MRI analysis.</p>
-  </div>
+<div class="container">
+<div class="smallcaps">PhD Biotechnology · Lakehead University</div>
+<h1>Scope of Comprehensive Exam for Jay Kumar Patel</h1>
+<p class="supervisor">Supervisor: Dr. T. Akilan</p>
+<p class="subtitle">This page outlines the literature scope for the comprehensive examination, with emphasis on brain MRI segmentation and related methodological foundations. The selected readings are organized by area and ordered from newest to oldest within each area to support discussion on segmentation accuracy, annotation burden, generalization, computational feasibility, and evaluation practice in brain MRI analysis.</p>
+</div>
 </header>
 <section class="summary-grid">
-  <article class="summary-card"><div class="area-count">10 papers</div><h2>Area 1 — Deep Learning for Brain MRI Segmentation</h2><p>CNN/U-Net-derived and attention-based brain MRI segmentation methods.</p></article>
-  <article class="summary-card"><div class="area-count">2 papers</div><h2>Area 2 — Edge AI / Real-Time Brain MRI Inference</h2><p>Efficiency and fast neuroanatomy segmentation anchors for brain MRI.</p></article>
-  <article class="summary-card"><div class="area-count">8 papers</div><h2>Area 3 — Transformer, Semi-Supervised, and Missing-Modality Brain MRI Segmentation</h2><p>Long-range context, modality robustness, pseudo-labeling, and limited-label methods.</p></article>
-  <article class="summary-card"><div class="area-count">5 papers</div><h2>Area 4 — Graph-Based, Benchmark Dataset, and Evaluation Foundations</h2><p>Graph reasoning, public benchmarks, metastasis datasets, and evaluation foundations.</p></article>
+<article class="summary-card"><div class="area-count">10 papers</div><h2>Area 1 — Deep Learning for Brain MRI Segmentation</h2><p>CNN/U-Net-derived and attention-based brain MRI segmentation methods.</p></article>
+<article class="summary-card"><div class="area-count">2 papers</div><h2>Area 2 — Edge AI / Real-Time Brain MRI Inference</h2><p>Efficiency and fast neuroanatomy segmentation anchors for brain MRI.</p></article>
+<article class="summary-card"><div class="area-count">8 papers</div><h2>Area 3 — Transformer, Semi-Supervised, and Missing-Modality Brain MRI Segmentation</h2><p>Long-range context, modality robustness, pseudo-labeling, and limited-label methods.</p></article>
+<article class="summary-card"><div class="area-count">5 papers</div><h2>Area 4 — Graph-Based, Benchmark Dataset, and Evaluation Foundations</h2><p>Graph reasoning, public benchmarks, metastasis datasets, and evaluation foundations.</p></article>
 </section>
 <main class="container">
-  <div class="note">These readings define the literature base for the comprehensive exam and the proposed brain MRI segmentation research. Together, they cover established segmentation architectures, efficient inference, limited-label learning, graph-based reasoning, public benchmarks, and evaluation practices in brain MRI analysis.</div>
-  <div class="toolbar"><div class="toolbar-inner"><input aria-label="Search papers" id="search" placeholder="Search papers, datasets, methods, limitations…" type="search"/><button id="reset">Reset search</button></div></div>
-  <p class="count" id="count"></p>
-  
+<div class="note">These readings define the literature base for the comprehensive exam and the proposed brain MRI segmentation research. Together, they cover established segmentation architectures, efficient inference, limited-label learning, graph-based reasoning, public benchmarks, and evaluation practices in brain MRI analysis.</div>
+<div class="toolbar"><div class="toolbar-inner"><input aria-label="Search papers" id="search" placeholder="Search papers, datasets, methods, limitations…" type="search"/><button id="reset">Reset search</button></div></div>
+<p class="count" id="count"></p>
 <section class="area-section" id="area-1">
-  <div class="section-head">
-    <div>
-      <p class="eyebrow">Area 1</p>
-      <h2>Deep Learning for Brain MRI Segmentation</h2>
-      <p>CNN/U-Net-derived, attention-enhanced, and challenge-winning brain MRI segmentation methods.</p>
-    </div>
-    <span class="section-count">10 papers</span>
-  </div>
-  <div class="table-wrap">
-    <table aria-label="Area 1 — Deep Learning for Brain MRI Segmentation">
-      <thead>
-        <tr>
-          <th class="year-col">Year</th>
-          <th class="focus-col">Focus</th>
-          <th class="citation-col">Bibliography / citation in IEEE format</th>
-          <th class="problem-col">Research problem addressed</th>
-          <th class="method-col">Core methodology / model / experimental design</th>
-          <th class="dataset-col">Dataset or experimental setup / best results achieved</th>
-          <th class="findings-col">Key findings / results</th>
-          <th class="strengths-col">Strengths / contributions</th>
-          <th class="limitations-col">Limitations / gaps</th>
-          <th class="relevance-col">Relevance to proposed research</th>
-          <th class="critical-col">Critical observations / questions</th>
-        </tr>
-      </thead>
-      <tbody>
-<tr data-search="1 Area 1 — Deep Learning for Brain MRI Segmentation 2025 Auto3DSeg challenge solution [1] A. Myronenko, D. Yang, Y. He, and D. Xu, “Auto3DSeg for brain tumor segmentation from 3D MRI in BraTS 2023 challenge,” arXiv:2510.25058, 2025. The expanded BraTS 2023 cluster requires automated 3D MRI segmentation pipelines that can adapt across several brain tumor tasks. MONAI Auto3DSeg-based automated pipeline for multiple BraTS 2023 segmentation challenges. BraTS 2023 cluster; reported first place in brain metastasis, meningioma, and BraTS-Africa tasks, and second place in adult and pediatric glioma tasks. Demonstrated the strength of automated, highly engineered 3D segmentation pipelines across heterogeneous brain tumor MRI tasks. Very recent brain-MRI challenge winner; useful benchmark for current state-of-practice. Challenge-winning automation may be resource-intensive and still relies on labeled challenge data. Sets a high current benchmark for proposed brain MRI segmentation research. Can label-efficient SSL and graph reasoning approach this level of performance with fewer annotations?">
-      <td class="year">2025</td>
-      <td><span class="focus">Auto3DSeg challenge solution</span></td>
-      <td class="citation-cell"><a class="paper-link" href="https://arxiv.org/pdf/2510.25058" target="_blank" rel="noopener noreferrer">[1] A. Myronenko, D. Yang, Y. He, and D. Xu, “Auto3DSeg for brain tumor segmentation from 3D MRI in BraTS 2023 challenge,” arXiv:2510.25058, 2025.</a><a class="open-chip" href="https://arxiv.org/pdf/2510.25058" target="_blank" rel="noopener noreferrer">Open paper ↗</a></td>
-      <td>The expanded BraTS 2023 cluster requires automated 3D MRI segmentation pipelines that can adapt across several brain tumor tasks.</td>
-      <td>MONAI Auto3DSeg-based automated pipeline for multiple BraTS 2023 segmentation challenges.</td>
-      <td>BraTS 2023 cluster; reported first place in brain metastasis, meningioma, and BraTS-Africa tasks, and second place in adult and pediatric glioma tasks.</td>
-      <td>Demonstrated the strength of automated, highly engineered 3D segmentation pipelines across heterogeneous brain tumor MRI tasks.</td>
-      <td>Very recent brain-MRI challenge winner; useful benchmark for current state-of-practice.</td>
-      <td>Challenge-winning automation may be resource-intensive and still relies on labeled challenge data.</td>
-      <td>Sets a high current benchmark for proposed brain MRI segmentation research.</td>
-      <td>Can label-efficient SSL and graph reasoning approach this level of performance with fewer annotations?</td>
-    </tr>
-<tr data-search="2 Area 1 — Deep Learning for Brain MRI Segmentation 2024 Recent BraTS ensemble segmentation [2] D. Capellán-Martín, Z. Jiang, A. Parida, et al., “Model ensemble for brain tumor segmentation in magnetic resonance imaging,” arXiv:2409.08232, 2024. Expanded BraTS tasks include pediatric tumors, meningiomas, and metastases, creating stronger requirements for generalizable brain tumor segmentation. Region-wise ensemble combining nnU-Net and Swin UNETR with task-specific post-processing and threshold optimization. BraTS 2023 PED, MEN, and MET tasks; ranked first for PED, third for MEN, and fourth for MET in the reported challenge setting. Showed that combining CNN and transformer strengths can improve robustness across newer brain tumor MRI tasks. Recent brain-MRI challenge paper; strong link between segmentation accuracy and broader clinical tumor types. Ensemble and post-processing pipeline may be computationally heavier than a single deployable model. Supports the need to evaluate proposed models beyond adult glioma alone. Can a single label-efficient model generalize across glioma, meningioma, metastasis, and pediatric tumor settings?">
-      <td class="year">2024</td>
-      <td><span class="focus">Recent BraTS ensemble segmentation</span></td>
-      <td class="citation-cell"><a class="paper-link" href="https://arxiv.org/pdf/2409.08232" target="_blank" rel="noopener noreferrer">[2] D. Capellán-Martín, Z. Jiang, A. Parida, et al., “Model ensemble for brain tumor segmentation in magnetic resonance imaging,” arXiv:2409.08232, 2024.</a><a class="open-chip" href="https://arxiv.org/pdf/2409.08232" target="_blank" rel="noopener noreferrer">Open paper ↗</a></td>
-      <td>Expanded BraTS tasks include pediatric tumors, meningiomas, and metastases, creating stronger requirements for generalizable brain tumor segmentation.</td>
-      <td>Region-wise ensemble combining nnU-Net and Swin UNETR with task-specific post-processing and threshold optimization.</td>
-      <td>BraTS 2023 PED, MEN, and MET tasks; ranked first for PED, third for MEN, and fourth for MET in the reported challenge setting.</td>
-      <td>Showed that combining CNN and transformer strengths can improve robustness across newer brain tumor MRI tasks.</td>
-      <td>Recent brain-MRI challenge paper; strong link between segmentation accuracy and broader clinical tumor types.</td>
-      <td>Ensemble and post-processing pipeline may be computationally heavier than a single deployable model.</td>
-      <td>Supports the need to evaluate proposed models beyond adult glioma alone.</td>
-      <td>Can a single label-efficient model generalize across glioma, meningioma, metastasis, and pediatric tumor settings?</td>
-    </tr>
-<tr data-search="3 Area 1 — Deep Learning for Brain MRI Segmentation 2024 Advanced nnU-Net for adult and pediatric tumors [3] M. Kharaji, H. Abbasi, Y. Orouskhani, et al., “Brain tumor segmentation with advanced nnU-Net: Pediatrics and adults tumors,” Neuroscience Informatics, vol. 4, no. 2, Art. no. 100156, 2024. Adult and pediatric brain tumors differ in appearance and distribution, requiring methods that can handle both settings. Extended nnU-Net with residual blocks, attention gates, and Hausdorff-distance loss for boundary refinement. BraTS adult glioma and pediatric tumor datasets; reported mean Dice/HD results for both tumor settings. Showed that boundary-aware loss and attention-enhanced nnU-Net can improve segmentation refinement. Recent open-access brain MRI paper; directly links adult and pediatric tumor segmentation. Reported performance still requires external validation and comparison to the strongest challenge ensembles. Relevant for clinical generalization and boundary-focused evaluation. Do attention gates and boundary losses improve small lesions consistently, or only under specific dataset conditions?">
-      <td class="year">2024</td>
-      <td><span class="focus">Advanced nnU-Net for adult and pediatric tumors</span></td>
-      <td class="citation-cell"><a class="paper-link" href="https://www.sciencedirect.com/science/article/pii/S2772528624000013" target="_blank" rel="noopener noreferrer">[3] M. Kharaji, H. Abbasi, Y. Orouskhani, et al., “Brain tumor segmentation with advanced nnU-Net: Pediatrics and adults tumors,” Neuroscience Informatics, vol. 4, no. 2, Art. no. 100156, 2024.</a><a class="open-chip" href="https://www.sciencedirect.com/science/article/pii/S2772528624000013" target="_blank" rel="noopener noreferrer">Open paper ↗</a></td>
-      <td>Adult and pediatric brain tumors differ in appearance and distribution, requiring methods that can handle both settings.</td>
-      <td>Extended nnU-Net with residual blocks, attention gates, and Hausdorff-distance loss for boundary refinement.</td>
-      <td>BraTS adult glioma and pediatric tumor datasets; reported mean Dice/HD results for both tumor settings.</td>
-      <td>Showed that boundary-aware loss and attention-enhanced nnU-Net can improve segmentation refinement.</td>
-      <td>Recent open-access brain MRI paper; directly links adult and pediatric tumor segmentation.</td>
-      <td>Reported performance still requires external validation and comparison to the strongest challenge ensembles.</td>
-      <td>Relevant for clinical generalization and boundary-focused evaluation.</td>
-      <td>Do attention gates and boundary losses improve small lesions consistently, or only under specific dataset conditions?</td>
-    </tr>
-<tr data-search="4 Area 1 — Deep Learning for Brain MRI Segmentation 2022 Focused CNN segmentation [4] P. Wang and A. C. S. Chung, “Relax and focus on brain tumor segmentation,” Medical Image Analysis, vol. 75, Art. no. 102259, 2022. Brain tumors vary strongly in location, size, grade, and morphology, making direct segmentation of all voxels inefficient and error-prone. Deep CNN strategy that separates broader localization from focused tumor-region segmentation to improve attention to relevant image regions. Multimodal glioma MRI; evaluated for high- and low-grade brain tumor segmentation. Demonstrated that focusing model capacity on tumor-relevant regions can improve segmentation reliability. Brain-MRI-specific; conceptually useful for region-of-interest and attention-guided segmentation. Performance depends on localization quality; not designed for unlabeled-data learning or graph reasoning. Supports the importance of focusing representation learning on biologically meaningful lesion regions. Can graph nodes or SSL objectives help define focus regions without requiring additional labels?">
-      <td class="year">2022</td>
-      <td><span class="focus">Focused CNN segmentation</span></td>
-      <td class="citation-cell"><a class="paper-link" href="https://www.sciencedirect.com/science/article/pii/S1361841521003042" target="_blank" rel="noopener noreferrer">[4] P. Wang and A. C. S. Chung, “Relax and focus on brain tumor segmentation,” Medical Image Analysis, vol. 75, Art. no. 102259, 2022.</a><a class="open-chip" href="https://www.sciencedirect.com/science/article/pii/S1361841521003042" target="_blank" rel="noopener noreferrer">Open paper ↗</a></td>
-      <td>Brain tumors vary strongly in location, size, grade, and morphology, making direct segmentation of all voxels inefficient and error-prone.</td>
-      <td>Deep CNN strategy that separates broader localization from focused tumor-region segmentation to improve attention to relevant image regions.</td>
-      <td>Multimodal glioma MRI; evaluated for high- and low-grade brain tumor segmentation.</td>
-      <td>Demonstrated that focusing model capacity on tumor-relevant regions can improve segmentation reliability.</td>
-      <td>Brain-MRI-specific; conceptually useful for region-of-interest and attention-guided segmentation.</td>
-      <td>Performance depends on localization quality; not designed for unlabeled-data learning or graph reasoning.</td>
-      <td>Supports the importance of focusing representation learning on biologically meaningful lesion regions.</td>
-      <td>Can graph nodes or SSL objectives help define focus regions without requiring additional labels?</td>
-    </tr>
-<tr data-search="5 Area 1 — Deep Learning for Brain MRI Segmentation 2022 Multi-decoder U-Net [5] S. T. Bukhari and H. Mohy-ud-Din, “E1D3 U-Net for brain tumor segmentation: Submission to the RSNA-ASNR-MICCAI BraTS 2021 challenge,” arXiv:2110.02519, 2021. Hierarchical tumor subregions have different visual characteristics and may benefit from specialized decoding branches. One encoder with three decoder heads specialized for whole tumor, tumor core, and enhancing tumor. BraTS 2018 validation and BraTS 2021 challenge data. Specialized decoders improved subregion-oriented segmentation without excessive architectural complexity. Brain-tumor-specific; conceptually useful for subregion-specific modeling. Fully supervised; adds decoder complexity; depends on BraTS-style region definitions. Relevant to future graph nodes or region heads representing different tumor compartments. Should subregions be modeled as independent outputs, hierarchical labels, or connected graph nodes?">
-      <td class="year">2022</td>
-      <td><span class="focus">Multi-decoder U-Net</span></td>
-      <td class="citation-cell"><a class="paper-link" href="https://arxiv.org/pdf/2110.02519" target="_blank" rel="noopener noreferrer">[5] S. T. Bukhari and H. Mohy-ud-Din, “E1D3 U-Net for brain tumor segmentation: Submission to the RSNA-ASNR-MICCAI BraTS 2021 challenge,” arXiv:2110.02519, 2021.</a><a class="open-chip" href="https://arxiv.org/pdf/2110.02519" target="_blank" rel="noopener noreferrer">Open paper ↗</a></td>
-      <td>Hierarchical tumor subregions have different visual characteristics and may benefit from specialized decoding branches.</td>
-      <td>One encoder with three decoder heads specialized for whole tumor, tumor core, and enhancing tumor.</td>
-      <td>BraTS 2018 validation and BraTS 2021 challenge data.</td>
-      <td>Specialized decoders improved subregion-oriented segmentation without excessive architectural complexity.</td>
-      <td>Brain-tumor-specific; conceptually useful for subregion-specific modeling.</td>
-      <td>Fully supervised; adds decoder complexity; depends on BraTS-style region definitions.</td>
-      <td>Relevant to future graph nodes or region heads representing different tumor compartments.</td>
-      <td>Should subregions be modeled as independent outputs, hierarchical labels, or connected graph nodes?</td>
-    </tr>
-<tr data-search="6 Area 1 — Deep Learning for Brain MRI Segmentation 2021 nnU-Net for BraTS [6] F. Isensee, P. F. Jaeger, P. M. Full, P. Vollmuth, and K. H. Maier-Hein, “nnU-Net for brain tumor segmentation,” in International MICCAI Brainlesion Workshop, 2021. Brain tumor segmentation requires a reliable, highly optimized reference pipeline across preprocessing, architecture, augmentation, and post-processing. BraTS-specific nnU-Net configuration using region-based training, aggressive augmentation, and tuned post-processing. BraTS 2020 multimodal brain MRI challenge; substantially improved over the unmodified baseline configuration. Established nnU-Net as a very strong reference method for brain tumor segmentation. Directly brain-MRI-specific; essential comparator for any proposed segmentation framework. Label-hungry and engineering-heavy; does not explicitly model anatomical relations or unlabeled data. Any proposed SSL, graph, or efficient-inference approach must be compared against nnU-Net-level performance. What improvement is still possible once preprocessing, augmentation, and post-processing are already near-optimal?">
-      <td class="year">2021</td>
-      <td><span class="focus">nnU-Net for BraTS</span></td>
-      <td class="citation-cell"><a class="paper-link" href="https://arxiv.org/pdf/2011.00848" target="_blank" rel="noopener noreferrer">[6] F. Isensee, P. F. Jaeger, P. M. Full, P. Vollmuth, and K. H. Maier-Hein, “nnU-Net for brain tumor segmentation,” in International MICCAI Brainlesion Workshop, 2021.</a><a class="open-chip" href="https://arxiv.org/pdf/2011.00848" target="_blank" rel="noopener noreferrer">Open paper ↗</a></td>
-      <td>Brain tumor segmentation requires a reliable, highly optimized reference pipeline across preprocessing, architecture, augmentation, and post-processing.</td>
-      <td>BraTS-specific nnU-Net configuration using region-based training, aggressive augmentation, and tuned post-processing.</td>
-      <td>BraTS 2020 multimodal brain MRI challenge; substantially improved over the unmodified baseline configuration.</td>
-      <td>Established nnU-Net as a very strong reference method for brain tumor segmentation.</td>
-      <td>Directly brain-MRI-specific; essential comparator for any proposed segmentation framework.</td>
-      <td>Label-hungry and engineering-heavy; does not explicitly model anatomical relations or unlabeled data.</td>
-      <td>Any proposed SSL, graph, or efficient-inference approach must be compared against nnU-Net-level performance.</td>
-      <td>What improvement is still possible once preprocessing, augmentation, and post-processing are already near-optimal?</td>
-    </tr>
-<tr data-search="7 Area 1 — Deep Learning for Brain MRI Segmentation 2021 Extended nnU-Net winning solution [7] H. M. Luu and S.-H. Park, “Extending nn-UNet for brain tumor segmentation,” arXiv:2112.04653, 2021. BraTS 2021 increased the scale and complexity of glioma segmentation, requiring stronger models than the prior nnU-Net baseline. Extended nnU-Net with a larger network, group normalization, axial attention in the decoder, and challenge-oriented training refinements. BraTS 2021 multimodal MRI; reported first-place final ranking on unseen test data. Showed that targeted extensions to a strong nnU-Net baseline can produce top challenge performance. High-quality BraTS-winning method; useful benchmark for model-design and training-protocol decisions. Still depends on dense expert annotations and a challenge-specific supervised setup. Important comparator for assessing whether the proposed method improves performance without requiring the same label burden. Which parts of the gain come from architecture, normalization, attention, data scale, or challenge-specific tuning?">
-      <td class="year">2021</td>
-      <td><span class="focus">Extended nnU-Net winning solution</span></td>
-      <td class="citation-cell"><a class="paper-link" href="https://arxiv.org/pdf/2112.04653" target="_blank" rel="noopener noreferrer">[7] H. M. Luu and S.-H. Park, “Extending nn-UNet for brain tumor segmentation,” arXiv:2112.04653, 2021.</a><a class="open-chip" href="https://arxiv.org/pdf/2112.04653" target="_blank" rel="noopener noreferrer">Open paper ↗</a></td>
-      <td>BraTS 2021 increased the scale and complexity of glioma segmentation, requiring stronger models than the prior nnU-Net baseline.</td>
-      <td>Extended nnU-Net with a larger network, group normalization, axial attention in the decoder, and challenge-oriented training refinements.</td>
-      <td>BraTS 2021 multimodal MRI; reported first-place final ranking on unseen test data.</td>
-      <td>Showed that targeted extensions to a strong nnU-Net baseline can produce top challenge performance.</td>
-      <td>High-quality BraTS-winning method; useful benchmark for model-design and training-protocol decisions.</td>
-      <td>Still depends on dense expert annotations and a challenge-specific supervised setup.</td>
-      <td>Important comparator for assessing whether the proposed method improves performance without requiring the same label burden.</td>
-      <td>Which parts of the gain come from architecture, normalization, attention, data scale, or challenge-specific tuning?</td>
-    </tr>
-<tr data-search="8 Area 1 — Deep Learning for Brain MRI Segmentation 2021 Optimized U-Net challenge solution [8] M. Futrega, A. Milesi, M. Marcinkiewicz, and P. Ribalta, “Optimized U-Net for brain tumor segmentation,” arXiv:2110.03352, 2021. Brain tumor segmentation requires careful optimization of architecture depth, channel width, losses, and post-processing rather than only proposing new modules. U-Net variant selected through ablation of deep supervision, focal loss, decoder attention, DropBlock, residual connections, and post-processing. BraTS 2021 challenge; won the validation phase and placed third in the test phase. Provided systematic evidence that optimization choices strongly affect BraTS performance. Brain-MRI-specific; strong ablation-driven paper for judging design choices scientifically. Fully supervised; challenge-specific choices may not generalize to smaller institutional datasets. Useful for designing fair ablations in the proposed research. Which components remain useful when labels are reduced and unlabeled MRI scans are introduced?">
-      <td class="year">2021</td>
-      <td><span class="focus">Optimized U-Net challenge solution</span></td>
-      <td class="citation-cell"><a class="paper-link" href="https://arxiv.org/pdf/2110.03352" target="_blank" rel="noopener noreferrer">[8] M. Futrega, A. Milesi, M. Marcinkiewicz, and P. Ribalta, “Optimized U-Net for brain tumor segmentation,” arXiv:2110.03352, 2021.</a><a class="open-chip" href="https://arxiv.org/pdf/2110.03352" target="_blank" rel="noopener noreferrer">Open paper ↗</a></td>
-      <td>Brain tumor segmentation requires careful optimization of architecture depth, channel width, losses, and post-processing rather than only proposing new modules.</td>
-      <td>U-Net variant selected through ablation of deep supervision, focal loss, decoder attention, DropBlock, residual connections, and post-processing.</td>
-      <td>BraTS 2021 challenge; won the validation phase and placed third in the test phase.</td>
-      <td>Provided systematic evidence that optimization choices strongly affect BraTS performance.</td>
-      <td>Brain-MRI-specific; strong ablation-driven paper for judging design choices scientifically.</td>
-      <td>Fully supervised; challenge-specific choices may not generalize to smaller institutional datasets.</td>
-      <td>Useful for designing fair ablations in the proposed research.</td>
-      <td>Which components remain useful when labels are reduced and unlabeled MRI scans are introduced?</td>
-    </tr>
-<tr data-search="9 Area 1 — Deep Learning for Brain MRI Segmentation 2018 Strong BraTS U-Net baseline [9] F. Isensee, J. Petersen, A. Klein, et al., “No New-Net,” in International MICCAI Brainlesion Workshop, 2018. Quantitative brain tumor segmentation requires a robust baseline before architectural novelty can be judged fairly. Carefully engineered U-Net-style BraTS pipeline emphasizing preprocessing, patch sampling, augmentation, Dice optimization, and post-processing. BraTS 2017/2018 multimodal MRI; competitive challenge performance with a deliberately simple but well-trained network. Showed that strong training strategy and preprocessing can rival more complex model designs. Brain-MRI-specific; high-quality baseline for evaluating whether new model complexity is justified. Does not address limited labels, missing modalities, graph reasoning, or deployment constraints. Defines the minimum baseline standard for the proposed brain MRI segmentation work. Are proposed gains due to new representation learning, or could they be matched by stronger training and post-processing?">
-      <td class="year">2018</td>
-      <td><span class="focus">Strong BraTS U-Net baseline</span></td>
-      <td class="citation-cell"><a class="paper-link" href="https://arxiv.org/pdf/1802.10508" target="_blank" rel="noopener noreferrer">[9] F. Isensee, J. Petersen, A. Klein, et al., “No New-Net,” in International MICCAI Brainlesion Workshop, 2018.</a><a class="open-chip" href="https://arxiv.org/pdf/1802.10508" target="_blank" rel="noopener noreferrer">Open paper ↗</a></td>
-      <td>Quantitative brain tumor segmentation requires a robust baseline before architectural novelty can be judged fairly.</td>
-      <td>Carefully engineered U-Net-style BraTS pipeline emphasizing preprocessing, patch sampling, augmentation, Dice optimization, and post-processing.</td>
-      <td>BraTS 2017/2018 multimodal MRI; competitive challenge performance with a deliberately simple but well-trained network.</td>
-      <td>Showed that strong training strategy and preprocessing can rival more complex model designs.</td>
-      <td>Brain-MRI-specific; high-quality baseline for evaluating whether new model complexity is justified.</td>
-      <td>Does not address limited labels, missing modalities, graph reasoning, or deployment constraints.</td>
-      <td>Defines the minimum baseline standard for the proposed brain MRI segmentation work.</td>
-      <td>Are proposed gains due to new representation learning, or could they be matched by stronger training and post-processing?</td>
-    </tr>
-<tr data-search="10 Area 1 — Deep Learning for Brain MRI Segmentation 2018 Autoencoder-regularized 3D segmentation [10] A. Myronenko, “3D MRI brain tumor segmentation using autoencoder regularization,” in International MICCAI Brainlesion Workshop, 2018. Brain tumor segmentation from 3D MRI is difficult because annotated datasets are limited and tumor subregions are morphologically heterogeneous. Encoder-decoder 3D CNN with a variational autoencoder regularization branch to improve feature learning under limited training data. BraTS 2018 multimodal MRI; winning method in the BraTS 2018 segmentation challenge. Demonstrated that auxiliary reconstruction regularization can improve 3D tumor subregion segmentation. Brain-MRI-specific; top challenge method; conceptually relevant to representation learning under data scarcity. Fully supervised challenge setting; ensemble-heavy design can reduce interpretability and deployment simplicity. Supports the importance of auxiliary/self-supervised objectives for label-efficient brain MRI segmentation. Can reconstruction-style regularization be replaced or strengthened by modern self-supervised contrastive or graph-based objectives?">
-      <td class="year">2018</td>
-      <td><span class="focus">Autoencoder-regularized 3D segmentation</span></td>
-      <td class="citation-cell"><a class="paper-link" href="https://arxiv.org/pdf/1810.11654" target="_blank" rel="noopener noreferrer">[10] A. Myronenko, “3D MRI brain tumor segmentation using autoencoder regularization,” in International MICCAI Brainlesion Workshop, 2018.</a><a class="open-chip" href="https://arxiv.org/pdf/1810.11654" target="_blank" rel="noopener noreferrer">Open paper ↗</a></td>
-      <td>Brain tumor segmentation from 3D MRI is difficult because annotated datasets are limited and tumor subregions are morphologically heterogeneous.</td>
-      <td>Encoder-decoder 3D CNN with a variational autoencoder regularization branch to improve feature learning under limited training data.</td>
-      <td>BraTS 2018 multimodal MRI; winning method in the BraTS 2018 segmentation challenge.</td>
-      <td>Demonstrated that auxiliary reconstruction regularization can improve 3D tumor subregion segmentation.</td>
-      <td>Brain-MRI-specific; top challenge method; conceptually relevant to representation learning under data scarcity.</td>
-      <td>Fully supervised challenge setting; ensemble-heavy design can reduce interpretability and deployment simplicity.</td>
-      <td>Supports the importance of auxiliary/self-supervised objectives for label-efficient brain MRI segmentation.</td>
-      <td>Can reconstruction-style regularization be replaced or strengthened by modern self-supervised contrastive or graph-based objectives?</td>
-    </tr>
-      </tbody>
-    </table>
-  </div>
+<div class="section-head">
+<div>
+<p class="eyebrow">Area 1</p>
+<h2>Deep Learning for Brain MRI Segmentation</h2>
+<p>CNN/U-Net-derived, attention-enhanced, and challenge-winning brain MRI segmentation methods. Papers are ordered from newest to oldest within this area.</p>
+</div>
+<span class="section-count">10 papers</span>
+</div>
+<div class="table-wrap">
+<table aria-label="Area 1 — Deep Learning for Brain MRI Segmentation">
+<thead>
+<tr>
+<th class="year-col">Year</th>
+<th class="focus-col">Focus</th>
+<th class="citation-col">Bibliography / citation in IEEE format</th>
+<th class="problem-col">Research problem addressed</th>
+<th class="method-col">Core methodology / model / experimental design</th>
+<th class="dataset-col">Dataset or experimental setup / best results achieved</th>
+<th class="findings-col">Key findings / results</th>
+<th class="strengths-col">Strengths / contributions</th>
+<th class="limitations-col">Limitations / gaps</th>
+<th class="relevance-col">Relevance to proposed research</th>
+<th class="critical-col">Critical observations / questions</th>
+</tr>
+</thead>
+<tbody>
+
+
+
+
+
+
+
+
+
+
+
+<tr data-search="2025 Auto3DSeg challenge solution [1] A. Myronenko, D. Yang, Y. He, and D. Xu, “Auto3DSeg for brain tumor segmentation from 3D MRI in BraTS 2023 challenge,” arXiv:2510.25058, 2025. Open paper ↗ The expanded BraTS 2023 cluster requires automated 3D MRI segmentation pipelines that can adapt across several brain tumor tasks. MONAI Auto3DSeg-based automated pipeline for multiple BraTS 2023 segmentation challenges. BraTS 2023 cluster; reported first place in brain metastasis, meningioma, and BraTS-Africa tasks, and second place in adult and pediatric glioma tasks. Demonstrated the strength of automated, highly engineered 3D segmentation pipelines across heterogeneous brain tumor MRI tasks. Very recent brain-MRI challenge winner; useful benchmark for current state-of-practice. Challenge-winning automation may be resource-intensive and still relies on labeled challenge data. Sets a high current benchmark for proposed brain MRI segmentation research. Can label-efficient SSL and graph reasoning approach this level of performance with fewer annotations?">
+<td class="year">2025</td>
+<td><span class="focus">Auto3DSeg challenge solution</span></td>
+<td class="citation-cell"><a class="paper-link" href="https://arxiv.org/pdf/2510.25058" rel="noopener noreferrer" target="_blank">[1] A. Myronenko, D. Yang, Y. He, and D. Xu, “Auto3DSeg for brain tumor segmentation from 3D MRI in BraTS 2023 challenge,” arXiv:2510.25058, 2025.</a><a class="open-chip" href="https://arxiv.org/pdf/2510.25058" rel="noopener noreferrer" target="_blank">Open paper ↗</a></td>
+<td>The expanded BraTS 2023 cluster requires automated 3D MRI segmentation pipelines that can adapt across several brain tumor tasks.</td>
+<td>MONAI Auto3DSeg-based automated pipeline for multiple BraTS 2023 segmentation challenges.</td>
+<td>BraTS 2023 cluster; reported first place in brain metastasis, meningioma, and BraTS-Africa tasks, and second place in adult and pediatric glioma tasks.</td>
+<td>Demonstrated the strength of automated, highly engineered 3D segmentation pipelines across heterogeneous brain tumor MRI tasks.</td>
+<td>Very recent brain-MRI challenge winner; useful benchmark for current state-of-practice.</td>
+<td>Challenge-winning automation may be resource-intensive and still relies on labeled challenge data.</td>
+<td>Sets a high current benchmark for proposed brain MRI segmentation research.</td>
+<td>Can label-efficient SSL and graph reasoning approach this level of performance with fewer annotations?</td>
+</tr>
+<tr data-search="2024 Recent BraTS ensemble segmentation [2] D. Capellán-Martín, Z. Jiang, A. Parida, X. Liu, V. Lam, H. Nisar, A. Tapp, S. Elsharkawi, M. J. Ledesma-Carbayo, S. M. Anwar, and M. G. Linguraru, “Model ensemble for brain tumor segmentation in magnetic resonance imaging,” in Brain Tumor Segmentation, and Cross-Modality Domain Adaptation for Medical Image Segmentation: MICCAI Challenges, BraTS 2023 and CrossMoDA 2023, Vancouver, BC, Canada, 2024, pp. 221–232, doi: 10.1007/978-3-031-76163-8_20. Open paper ↗ Expanded BraTS tasks include pediatric tumors, meningiomas, and metastases, creating stronger requirements for generalizable brain tumor segmentation. Region-wise ensemble combining nnU-Net and Swin UNETR with task-specific post-processing and threshold optimization. BraTS 2023 PED, MEN, and MET tasks; ranked first for PED, third for MEN, and fourth for MET in the reported challenge setting. Showed that combining CNN and transformer strengths can improve robustness across newer brain tumor MRI tasks. Recent brain-MRI challenge paper; strong link between segmentation accuracy and broader clinical tumor types. Ensemble and post-processing pipeline may be computationally heavier than a single deployable model. Supports the need to evaluate proposed models beyond adult glioma alone. Can a single label-efficient model generalize across glioma, meningioma, metastasis, and pediatric tumor settings?">
+<td class="year">2024</td>
+<td><span class="focus">Recent BraTS ensemble segmentation</span></td>
+<td class="citation-cell"><a class="paper-link" href="https://dl.acm.org/doi/10.1007/978-3-031-76163-8_20" rel="noopener noreferrer" target="_blank">[2] D. Capellán-Martín, Z. Jiang, A. Parida, X. Liu, V. Lam, H. Nisar, A. Tapp, S. Elsharkawi, M. J. Ledesma-Carbayo, S. M. Anwar, and M. G. Linguraru, “Model ensemble for brain tumor segmentation in magnetic resonance imaging,” in Brain Tumor Segmentation, and Cross-Modality Domain Adaptation for Medical Image Segmentation: MICCAI Challenges, BraTS 2023 and CrossMoDA 2023, Vancouver, BC, Canada, 2024, pp. 221–232, doi: 10.1007/978-3-031-76163-8_20.</a><a class="open-chip" href="https://dl.acm.org/doi/10.1007/978-3-031-76163-8_20" rel="noopener noreferrer" target="_blank">Open paper ↗</a></td>
+<td>Expanded BraTS tasks include pediatric tumors, meningiomas, and metastases, creating stronger requirements for generalizable brain tumor segmentation.</td>
+<td>Region-wise ensemble combining nnU-Net and Swin UNETR with task-specific post-processing and threshold optimization.</td>
+<td>BraTS 2023 PED, MEN, and MET tasks; ranked first for PED, third for MEN, and fourth for MET in the reported challenge setting.</td>
+<td>Showed that combining CNN and transformer strengths can improve robustness across newer brain tumor MRI tasks.</td>
+<td>Recent brain-MRI challenge paper; strong link between segmentation accuracy and broader clinical tumor types.</td>
+<td>Ensemble and post-processing pipeline may be computationally heavier than a single deployable model.</td>
+<td>Supports the need to evaluate proposed models beyond adult glioma alone.</td>
+<td>Can a single label-efficient model generalize across glioma, meningioma, metastasis, and pediatric tumor settings?</td>
+</tr>
+<tr data-search="2024 Advanced nnU-Net for adult and pediatric tumors [3] M. Kharaji, H. Abbasi, Y. Orouskhani, M. Shomalzadeh, F. Kazemi, and M. Orouskhani, “Brain tumor segmentation with advanced nnU-Net: Pediatrics and adults tumors,” Neuroscience Informatics, vol. 4, no. 2, Art. no. 100156, 2024, doi: 10.1016/j.neuri.2024.100156. Open paper ↗ Adult and pediatric brain tumors differ in appearance and distribution, requiring methods that can handle both settings. Extended nnU-Net with residual blocks, attention gates, and Hausdorff-distance loss for boundary refinement. BraTS adult glioma and pediatric tumor datasets; reported mean Dice/HD results for both tumor settings. Showed that boundary-aware loss and attention-enhanced nnU-Net can improve segmentation refinement. Recent open-access brain MRI paper; directly links adult and pediatric tumor segmentation. Reported performance still requires external validation and comparison to the strongest challenge ensembles. Relevant for clinical generalization and boundary-focused evaluation. Do attention gates and boundary losses improve small lesions consistently, or only under specific dataset conditions?">
+<td class="year">2024</td>
+<td><span class="focus">Advanced nnU-Net for adult and pediatric tumors</span></td>
+<td class="citation-cell"><a class="paper-link" href="https://www.sciencedirect.com/science/article/pii/S2772528624000013" rel="noopener noreferrer" target="_blank">[3] M. Kharaji, H. Abbasi, Y. Orouskhani, M. Shomalzadeh, F. Kazemi, and M. Orouskhani, “Brain tumor segmentation with advanced nnU-Net: Pediatrics and adults tumors,” Neuroscience Informatics, vol. 4, no. 2, Art. no. 100156, 2024, doi: 10.1016/j.neuri.2024.100156.</a><a class="open-chip" href="https://www.sciencedirect.com/science/article/pii/S2772528624000013" rel="noopener noreferrer" target="_blank">Open paper ↗</a></td>
+<td>Adult and pediatric brain tumors differ in appearance and distribution, requiring methods that can handle both settings.</td>
+<td>Extended nnU-Net with residual blocks, attention gates, and Hausdorff-distance loss for boundary refinement.</td>
+<td>BraTS adult glioma and pediatric tumor datasets; reported mean Dice/HD results for both tumor settings.</td>
+<td>Showed that boundary-aware loss and attention-enhanced nnU-Net can improve segmentation refinement.</td>
+<td>Recent open-access brain MRI paper; directly links adult and pediatric tumor segmentation.</td>
+<td>Reported performance still requires external validation and comparison to the strongest challenge ensembles.</td>
+<td>Relevant for clinical generalization and boundary-focused evaluation.</td>
+<td>Do attention gates and boundary losses improve small lesions consistently, or only under specific dataset conditions?</td>
+</tr>
+<tr data-search="2022 Focused CNN segmentation [4] P. Wang and A. C. S. Chung, “Relax and focus on brain tumor segmentation,” Medical Image Analysis, vol. 75, Art. no. 102259, 2022, doi: 10.1016/j.media.2021.102259. Open paper ↗ Brain tumors vary strongly in location, size, grade, and morphology, making direct segmentation of all voxels inefficient and error-prone. Deep CNN strategy that separates broader localization from focused tumor-region segmentation to improve attention to relevant image regions. Multimodal glioma MRI; evaluated for high- and low-grade brain tumor segmentation. Demonstrated that focusing model capacity on tumor-relevant regions can improve segmentation reliability. Brain-MRI-specific; conceptually useful for region-of-interest and attention-guided segmentation. Performance depends on localization quality; not designed for unlabeled-data learning or graph reasoning. Supports the importance of focusing representation learning on biologically meaningful lesion regions. Can graph nodes or SSL objectives help define focus regions without requiring additional labels?">
+<td class="year">2022</td>
+<td><span class="focus">Focused CNN segmentation</span></td>
+<td class="citation-cell"><a class="paper-link" href="https://www.sciencedirect.com/science/article/pii/S1361841521003042" rel="noopener noreferrer" target="_blank">[4] P. Wang and A. C. S. Chung, “Relax and focus on brain tumor segmentation,” Medical Image Analysis, vol. 75, Art. no. 102259, 2022, doi: 10.1016/j.media.2021.102259.</a><a class="open-chip" href="https://www.sciencedirect.com/science/article/pii/S1361841521003042" rel="noopener noreferrer" target="_blank">Open paper ↗</a></td>
+<td>Brain tumors vary strongly in location, size, grade, and morphology, making direct segmentation of all voxels inefficient and error-prone.</td>
+<td>Deep CNN strategy that separates broader localization from focused tumor-region segmentation to improve attention to relevant image regions.</td>
+<td>Multimodal glioma MRI; evaluated for high- and low-grade brain tumor segmentation.</td>
+<td>Demonstrated that focusing model capacity on tumor-relevant regions can improve segmentation reliability.</td>
+<td>Brain-MRI-specific; conceptually useful for region-of-interest and attention-guided segmentation.</td>
+<td>Performance depends on localization quality; not designed for unlabeled-data learning or graph reasoning.</td>
+<td>Supports the importance of focusing representation learning on biologically meaningful lesion regions.</td>
+<td>Can graph nodes or SSL objectives help define focus regions without requiring additional labels?</td>
+</tr>
+<tr data-search="2022 Multi-decoder U-Net [5] S. T. Bukhari and H. Mohy-ud-Din, “E1D3 U-Net for brain tumor segmentation: Submission to the RSNA-ASNR-MICCAI BraTS 2021 challenge,” in Brainlesion: Glioma, Multiple Sclerosis, Stroke and Traumatic Brain Injuries, A. Crimi and S. Bakas, Eds. Cham, Switzerland: Springer, 2022, pp. 276–288, doi: 10.1007/978-3-031-09002-8_25. Open paper ↗ Hierarchical tumor subregions have different visual characteristics and may benefit from specialized decoding branches. One encoder with three decoder heads specialized for whole tumor, tumor core, and enhancing tumor. BraTS 2018 validation and BraTS 2021 challenge data. Specialized decoders improved subregion-oriented segmentation without excessive architectural complexity. Brain-tumor-specific; conceptually useful for subregion-specific modeling. Fully supervised; adds decoder complexity; depends on BraTS-style region definitions. Relevant to future graph nodes or region heads representing different tumor compartments. Should subregions be modeled as independent outputs, hierarchical labels, or connected graph nodes?">
+<td class="year">2022</td>
+<td><span class="focus">Multi-decoder U-Net</span></td>
+<td class="citation-cell"><a class="paper-link" href="https://link.springer.com/chapter/10.1007/978-3-031-09002-8_25" rel="noopener noreferrer" target="_blank">[5] S. T. Bukhari and H. Mohy-ud-Din, “E1D3 U-Net for brain tumor segmentation: Submission to the RSNA-ASNR-MICCAI BraTS 2021 challenge,” in Brainlesion: Glioma, Multiple Sclerosis, Stroke and Traumatic Brain Injuries, A. Crimi and S. Bakas, Eds. Cham, Switzerland: Springer, 2022, pp. 276–288, doi: 10.1007/978-3-031-09002-8_25.</a><a class="open-chip" href="https://link.springer.com/chapter/10.1007/978-3-031-09002-8_25" rel="noopener noreferrer" target="_blank">Open paper ↗</a></td>
+<td>Hierarchical tumor subregions have different visual characteristics and may benefit from specialized decoding branches.</td>
+<td>One encoder with three decoder heads specialized for whole tumor, tumor core, and enhancing tumor.</td>
+<td>BraTS 2018 validation and BraTS 2021 challenge data.</td>
+<td>Specialized decoders improved subregion-oriented segmentation without excessive architectural complexity.</td>
+<td>Brain-tumor-specific; conceptually useful for subregion-specific modeling.</td>
+<td>Fully supervised; adds decoder complexity; depends on BraTS-style region definitions.</td>
+<td>Relevant to future graph nodes or region heads representing different tumor compartments.</td>
+<td>Should subregions be modeled as independent outputs, hierarchical labels, or connected graph nodes?</td>
+</tr>
+<tr data-search="2022 Extended nnU-Net winning solution [7] H. M. Luu and S.-H. Park, “Extending nn-UNet for brain tumor segmentation,” in Brainlesion: Glioma, Multiple Sclerosis, Stroke and Traumatic Brain Injuries, A. Crimi and S. Bakas, Eds., Lecture Notes in Computer Science, vol. 12963. Cham, Switzerland: Springer, 2022, pp. 173–186, doi: 10.1007/978-3-031-09002-8_16. Open paper ↗ BraTS 2021 increased the scale and complexity of glioma segmentation, requiring stronger models than the prior nnU-Net baseline. Extended nnU-Net with a larger network, group normalization, axial attention in the decoder, and challenge-oriented training refinements. BraTS 2021 multimodal MRI; reported first-place final ranking on unseen test data. Showed that targeted extensions to a strong nnU-Net baseline can produce top challenge performance. High-quality BraTS-winning method; useful benchmark for model-design and training-protocol decisions. Still depends on dense expert annotations and a challenge-specific supervised setup. Important comparator for assessing whether the proposed method improves performance without requiring the same label burden. Which parts of the gain come from architecture, normalization, attention, data scale, or challenge-specific tuning?">
+<td class="year">2022</td>
+<td><span class="focus">Extended nnU-Net winning solution</span></td>
+<td class="citation-cell"><a class="paper-link" href="https://link.springer.com/chapter/10.1007/978-3-031-09002-8_16" rel="noopener noreferrer" target="_blank">[7] H. M. Luu and S.-H. Park, “Extending nn-UNet for brain tumor segmentation,” in Brainlesion: Glioma, Multiple Sclerosis, Stroke and Traumatic Brain Injuries, A. Crimi and S. Bakas, Eds., Lecture Notes in Computer Science, vol. 12963. Cham, Switzerland: Springer, 2022, pp. 173–186, doi: 10.1007/978-3-031-09002-8_16.</a><a class="open-chip" href="https://link.springer.com/chapter/10.1007/978-3-031-09002-8_16" rel="noopener noreferrer" target="_blank">Open paper ↗</a></td>
+<td>BraTS 2021 increased the scale and complexity of glioma segmentation, requiring stronger models than the prior nnU-Net baseline.</td>
+<td>Extended nnU-Net with a larger network, group normalization, axial attention in the decoder, and challenge-oriented training refinements.</td>
+<td>BraTS 2021 multimodal MRI; reported first-place final ranking on unseen test data.</td>
+<td>Showed that targeted extensions to a strong nnU-Net baseline can produce top challenge performance.</td>
+<td>High-quality BraTS-winning method; useful benchmark for model-design and training-protocol decisions.</td>
+<td>Still depends on dense expert annotations and a challenge-specific supervised setup.</td>
+<td>Important comparator for assessing whether the proposed method improves performance without requiring the same label burden.</td>
+<td>Which parts of the gain come from architecture, normalization, attention, data scale, or challenge-specific tuning?</td>
+</tr>
+<tr data-search="2022 Optimized U-Net challenge solution [8] M. Futrega, A. Milesi, M. Marcinkiewicz, and P. Ribalta, “Optimized U-Net for brain tumor segmentation,” in Brainlesion: Glioma, Multiple Sclerosis, Stroke and Traumatic Brain Injuries, Cham, Switzerland: Springer, 2022, pp. 15–29, doi: 10.1007/978-3-031-09002-8_2. Open paper ↗ Brain tumor segmentation requires careful optimization of architecture depth, channel width, losses, and post-processing rather than only proposing new modules. U-Net variant selected through ablation of deep supervision, focal loss, decoder attention, DropBlock, residual connections, and post-processing. BraTS 2021 challenge; won the validation phase and placed third in the test phase. Provided systematic evidence that optimization choices strongly affect BraTS performance. Brain-MRI-specific; strong ablation-driven paper for judging design choices scientifically. Fully supervised; challenge-specific choices may not generalize to smaller institutional datasets. Useful for designing fair ablations in the proposed research. Which components remain useful when labels are reduced and unlabeled MRI scans are introduced?">
+<td class="year">2022</td>
+<td><span class="focus">Optimized U-Net challenge solution</span></td>
+<td class="citation-cell"><a class="paper-link" href="https://dl.acm.org/doi/10.1007/978-3-031-09002-8_2" rel="noopener noreferrer" target="_blank">[8] M. Futrega, A. Milesi, M. Marcinkiewicz, and P. Ribalta, “Optimized U-Net for brain tumor segmentation,” in Brainlesion: Glioma, Multiple Sclerosis, Stroke and Traumatic Brain Injuries, Cham, Switzerland: Springer, 2022, pp. 15–29, doi: 10.1007/978-3-031-09002-8_2.</a><a class="open-chip" href="https://dl.acm.org/doi/10.1007/978-3-031-09002-8_2" rel="noopener noreferrer" target="_blank">Open paper ↗</a></td>
+<td>Brain tumor segmentation requires careful optimization of architecture depth, channel width, losses, and post-processing rather than only proposing new modules.</td>
+<td>U-Net variant selected through ablation of deep supervision, focal loss, decoder attention, DropBlock, residual connections, and post-processing.</td>
+<td>BraTS 2021 challenge; won the validation phase and placed third in the test phase.</td>
+<td>Provided systematic evidence that optimization choices strongly affect BraTS performance.</td>
+<td>Brain-MRI-specific; strong ablation-driven paper for judging design choices scientifically.</td>
+<td>Fully supervised; challenge-specific choices may not generalize to smaller institutional datasets.</td>
+<td>Useful for designing fair ablations in the proposed research.</td>
+<td>Which components remain useful when labels are reduced and unlabeled MRI scans are introduced?</td>
+</tr>
+<tr data-search="2021 nnU-Net for BraTS [6] F. Isensee, P. F. Jaeger, P. M. Full, P. Vollmuth, and K. H. Maier-Hein, “nnU-Net for brain tumor segmentation,” in Brainlesion: Glioma, Multiple Sclerosis, Stroke and Traumatic Brain Injuries, Cham, Switzerland: Springer, 2021, pp. 118–132, doi: 10.1007/978-3-030-72087-2_11. Open paper ↗ Brain tumor segmentation requires a reliable, highly optimized reference pipeline across preprocessing, architecture, augmentation, and post-processing. BraTS-specific nnU-Net configuration using region-based training, aggressive augmentation, and tuned post-processing. BraTS 2020 multimodal brain MRI challenge; substantially improved over the unmodified baseline configuration. Established nnU-Net as a very strong reference method for brain tumor segmentation. Directly brain-MRI-specific; essential comparator for any proposed segmentation framework. Label-hungry and engineering-heavy; does not explicitly model anatomical relations or unlabeled data. Any proposed SSL, graph, or efficient-inference approach must be compared against nnU-Net-level performance. What improvement is still possible once preprocessing, augmentation, and post-processing are already near-optimal?">
+<td class="year">2021</td>
+<td><span class="focus">nnU-Net for BraTS</span></td>
+<td class="citation-cell"><a class="paper-link" href="https://dl.acm.org/doi/10.1007/978-3-030-72087-2_11" rel="noopener noreferrer" target="_blank">[6] F. Isensee, P. F. Jaeger, P. M. Full, P. Vollmuth, and K. H. Maier-Hein, “nnU-Net for brain tumor segmentation,” in Brainlesion: Glioma, Multiple Sclerosis, Stroke and Traumatic Brain Injuries, Cham, Switzerland: Springer, 2021, pp. 118–132, doi: 10.1007/978-3-030-72087-2_11.</a><a class="open-chip" href="https://dl.acm.org/doi/10.1007/978-3-030-72087-2_11" rel="noopener noreferrer" target="_blank">Open paper ↗</a></td>
+<td>Brain tumor segmentation requires a reliable, highly optimized reference pipeline across preprocessing, architecture, augmentation, and post-processing.</td>
+<td>BraTS-specific nnU-Net configuration using region-based training, aggressive augmentation, and tuned post-processing.</td>
+<td>BraTS 2020 multimodal brain MRI challenge; substantially improved over the unmodified baseline configuration.</td>
+<td>Established nnU-Net as a very strong reference method for brain tumor segmentation.</td>
+<td>Directly brain-MRI-specific; essential comparator for any proposed segmentation framework.</td>
+<td>Label-hungry and engineering-heavy; does not explicitly model anatomical relations or unlabeled data.</td>
+<td>Any proposed SSL, graph, or efficient-inference approach must be compared against nnU-Net-level performance.</td>
+<td>What improvement is still possible once preprocessing, augmentation, and post-processing are already near-optimal?</td>
+</tr>
+<tr data-search="2019 Strong BraTS U-Net baseline [9] F. Isensee, P. Kickingereder, W. Wick, M. Bendszus, and K. H. Maier-Hein, “No New-Net,” in Brainlesion: Glioma, Multiple Sclerosis, Stroke and Traumatic Brain Injuries, Cham, Switzerland: Springer, 2019, pp. 234–244, doi: 10.1007/978-3-030-11726-9_21. Open paper ↗ Quantitative brain tumor segmentation requires a robust baseline before architectural novelty can be judged fairly. Carefully engineered U-Net-style BraTS pipeline emphasizing preprocessing, patch sampling, augmentation, Dice optimization, and post-processing. BraTS 2017/2018 multimodal MRI; competitive challenge performance with a deliberately simple but well-trained network. Showed that strong training strategy and preprocessing can rival more complex model designs. Brain-MRI-specific; high-quality baseline for evaluating whether new model complexity is justified. Does not address limited labels, missing modalities, graph reasoning, or deployment constraints. Defines the minimum baseline standard for the proposed brain MRI segmentation work. Are proposed gains due to new representation learning, or could they be matched by stronger training and post-processing?">
+<td class="year">2019</td>
+<td><span class="focus">Strong BraTS U-Net baseline</span></td>
+<td class="citation-cell"><a class="paper-link" href="https://dl.acm.org/doi/10.1007/978-3-030-11726-9_21" rel="noopener noreferrer" target="_blank">[9] F. Isensee, P. Kickingereder, W. Wick, M. Bendszus, and K. H. Maier-Hein, “No New-Net,” in Brainlesion: Glioma, Multiple Sclerosis, Stroke and Traumatic Brain Injuries, Cham, Switzerland: Springer, 2019, pp. 234–244, doi: 10.1007/978-3-030-11726-9_21.</a><a class="open-chip" href="https://dl.acm.org/doi/10.1007/978-3-030-11726-9_21" rel="noopener noreferrer" target="_blank">Open paper ↗</a></td>
+<td>Quantitative brain tumor segmentation requires a robust baseline before architectural novelty can be judged fairly.</td>
+<td>Carefully engineered U-Net-style BraTS pipeline emphasizing preprocessing, patch sampling, augmentation, Dice optimization, and post-processing.</td>
+<td>BraTS 2017/2018 multimodal MRI; competitive challenge performance with a deliberately simple but well-trained network.</td>
+<td>Showed that strong training strategy and preprocessing can rival more complex model designs.</td>
+<td>Brain-MRI-specific; high-quality baseline for evaluating whether new model complexity is justified.</td>
+<td>Does not address limited labels, missing modalities, graph reasoning, or deployment constraints.</td>
+<td>Defines the minimum baseline standard for the proposed brain MRI segmentation work.</td>
+<td>Are proposed gains due to new representation learning, or could they be matched by stronger training and post-processing?</td>
+</tr>
+<tr data-search="2019 Autoencoder-regularized 3D segmentation [10] A. Myronenko, “3D MRI brain tumor segmentation using autoencoder regularization,” in Brainlesion: Glioma, Multiple Sclerosis, Stroke and Traumatic Brain Injuries, Cham, Switzerland: Springer, 2019, pp. 311–320, doi: 10.1007/978-3-030-11726-9_28. Open paper ↗ Brain tumor segmentation from 3D MRI is difficult because annotated datasets are limited and tumor subregions are morphologically heterogeneous. Encoder-decoder 3D CNN with a variational autoencoder regularization branch to improve feature learning under limited training data. BraTS 2018 multimodal MRI; winning method in the BraTS 2018 segmentation challenge. Demonstrated that auxiliary reconstruction regularization can improve 3D tumor subregion segmentation. Brain-MRI-specific; top challenge method; conceptually relevant to representation learning under data scarcity. Fully supervised challenge setting; ensemble-heavy design can reduce interpretability and deployment simplicity. Supports the importance of auxiliary/self-supervised objectives for label-efficient brain MRI segmentation. Can reconstruction-style regularization be replaced or strengthened by modern self-supervised contrastive or graph-based objectives?">
+<td class="year">2019</td>
+<td><span class="focus">Autoencoder-regularized 3D segmentation</span></td>
+<td class="citation-cell"><a class="paper-link" href="https://dl.acm.org/doi/10.1007/978-3-030-11726-9_28" rel="noopener noreferrer" target="_blank">[10] A. Myronenko, “3D MRI brain tumor segmentation using autoencoder regularization,” in Brainlesion: Glioma, Multiple Sclerosis, Stroke and Traumatic Brain Injuries, Cham, Switzerland: Springer, 2019, pp. 311–320, doi: 10.1007/978-3-030-11726-9_28.</a><a class="open-chip" href="https://dl.acm.org/doi/10.1007/978-3-030-11726-9_28" rel="noopener noreferrer" target="_blank">Open paper ↗</a></td>
+<td>Brain tumor segmentation from 3D MRI is difficult because annotated datasets are limited and tumor subregions are morphologically heterogeneous.</td>
+<td>Encoder-decoder 3D CNN with a variational autoencoder regularization branch to improve feature learning under limited training data.</td>
+<td>BraTS 2018 multimodal MRI; winning method in the BraTS 2018 segmentation challenge.</td>
+<td>Demonstrated that auxiliary reconstruction regularization can improve 3D tumor subregion segmentation.</td>
+<td>Brain-MRI-specific; top challenge method; conceptually relevant to representation learning under data scarcity.</td>
+<td>Fully supervised challenge setting; ensemble-heavy design can reduce interpretability and deployment simplicity.</td>
+<td>Supports the importance of auxiliary/self-supervised objectives for label-efficient brain MRI segmentation.</td>
+<td>Can reconstruction-style regularization be replaced or strengthened by modern self-supervised contrastive or graph-based objectives?</td>
+</tr>
+</tbody>
+</table>
+</div>
 </section>
 <section class="area-section" id="area-2">
-  <div class="section-head">
-    <div>
-      <p class="eyebrow">Area 2</p>
-      <h2>Edge AI / Real-Time Brain MRI Inference</h2>
-      <p>Brain-MRI-specific efficiency and real-time neuroanatomy segmentation anchors.</p>
-    </div>
-    <span class="section-count">2 papers</span>
-  </div>
-  <div class="table-wrap">
-    <table aria-label="Area 2 — Edge AI / Real-Time Brain MRI Inference">
-      <thead>
-        <tr>
-          <th class="year-col">Year</th>
-          <th class="focus-col">Focus</th>
-          <th class="citation-col">Bibliography / citation in IEEE format</th>
-          <th class="problem-col">Research problem addressed</th>
-          <th class="method-col">Core methodology / model / experimental design</th>
-          <th class="dataset-col">Dataset or experimental setup / best results achieved</th>
-          <th class="findings-col">Key findings / results</th>
-          <th class="strengths-col">Strengths / contributions</th>
-          <th class="limitations-col">Limitations / gaps</th>
-          <th class="relevance-col">Relevance to proposed research</th>
-          <th class="critical-col">Critical observations / questions</th>
-        </tr>
-      </thead>
-      <tbody>
-<tr data-search="11 Area 2 — Edge AI / Real-Time Brain MRI Inference 2019 Fast whole-brain segmentation [11] A. G. Roy, S. Conjeti, N. Navab, and C. Wachinger, “QuickNAT: A fully convolutional network for quick and accurate segmentation of neuroanatomy,” NeuroImage, 2019. Whole-brain MRI segmentation is clinically useful but conventional pipelines can take hours, limiting real-time use. Fully convolutional densely connected network with auxiliary-label pretraining and manual-label fine-tuning. Eight structural brain MRI datasets across age, pathology, and scanners; segments MRI brain scans in roughly 20 seconds. QuickNAT achieved fast, accurate neuroanatomy segmentation, supporting real-time clinical feasibility. Directly brain MRI; strong fit for Edge AI/real-time inference concentration. Whole-brain anatomy rather than tumor-only segmentation; hardware/deployment constraints still require testing. Provides a brain-MRI-specific efficiency anchor without relying on generic mobile-vision papers. Can label-efficient SSL and graph reasoning be added without losing real-time inference speed?">
-      <td class="year">2019</td>
-      <td><span class="focus">Fast whole-brain segmentation</span></td>
-      <td class="citation-cell"><a class="paper-link" href="https://arxiv.org/pdf/1801.04161" target="_blank" rel="noopener noreferrer">[11] A. G. Roy, S. Conjeti, N. Navab, and C. Wachinger, “QuickNAT: A fully convolutional network for quick and accurate segmentation of neuroanatomy,” NeuroImage, 2019.</a><a class="open-chip" href="https://arxiv.org/pdf/1801.04161" target="_blank" rel="noopener noreferrer">Open paper ↗</a></td>
-      <td>Whole-brain MRI segmentation is clinically useful but conventional pipelines can take hours, limiting real-time use.</td>
-      <td>Fully convolutional densely connected network with auxiliary-label pretraining and manual-label fine-tuning.</td>
-      <td>Eight structural brain MRI datasets across age, pathology, and scanners; segments MRI brain scans in roughly 20 seconds.</td>
-      <td>QuickNAT achieved fast, accurate neuroanatomy segmentation, supporting real-time clinical feasibility.</td>
-      <td>Directly brain MRI; strong fit for Edge AI/real-time inference concentration.</td>
-      <td>Whole-brain anatomy rather than tumor-only segmentation; hardware/deployment constraints still require testing.</td>
-      <td>Provides a brain-MRI-specific efficiency anchor without relying on generic mobile-vision papers.</td>
-      <td>Can label-efficient SSL and graph reasoning be added without losing real-time inference speed?</td>
-    </tr>
-<tr data-search="12 Area 2 — Edge AI / Real-Time Brain MRI Inference 2018 3D neuroanatomy segmentation [12] C. Wachinger, M. Reuter, and T. Klein, “DeepNAT: Deep convolutional neural network for segmenting neuroanatomy,” NeuroImage, 2018. Automatic segmentation of neuroanatomical brain structures from T1-weighted MRI is needed for quantitative analysis. Hierarchical 3D CNN with multi-task patch prediction, spatial coordinates, and CRF-based refinement. T1-weighted brain MRI neuroanatomy segmentation across 25 brain structures. DeepNAT compared favorably with state-of-the-art neuroanatomy segmentation methods. Brain-MRI-specific; combines CNN representation learning with anatomical spatial information. Patch-based and structure-focused; less directly targeted to tumor subregions or missing-modalities. Relevant for structural/anatomical priors and region-level brain modeling. Can anatomical priors improve tumor segmentation without over-constraining abnormal structures?">
-      <td class="year">2018</td>
-      <td><span class="focus">3D neuroanatomy segmentation</span></td>
-      <td class="citation-cell"><a class="paper-link" href="https://pmc.ncbi.nlm.nih.gov/articles/PMC5563492/" target="_blank" rel="noopener noreferrer">[12] C. Wachinger, M. Reuter, and T. Klein, “DeepNAT: Deep convolutional neural network for segmenting neuroanatomy,” NeuroImage, 2018.</a><a class="open-chip" href="https://pmc.ncbi.nlm.nih.gov/articles/PMC5563492/" target="_blank" rel="noopener noreferrer">Open paper ↗</a></td>
-      <td>Automatic segmentation of neuroanatomical brain structures from T1-weighted MRI is needed for quantitative analysis.</td>
-      <td>Hierarchical 3D CNN with multi-task patch prediction, spatial coordinates, and CRF-based refinement.</td>
-      <td>T1-weighted brain MRI neuroanatomy segmentation across 25 brain structures.</td>
-      <td>DeepNAT compared favorably with state-of-the-art neuroanatomy segmentation methods.</td>
-      <td>Brain-MRI-specific; combines CNN representation learning with anatomical spatial information.</td>
-      <td>Patch-based and structure-focused; less directly targeted to tumor subregions or missing-modalities.</td>
-      <td>Relevant for structural/anatomical priors and region-level brain modeling.</td>
-      <td>Can anatomical priors improve tumor segmentation without over-constraining abnormal structures?</td>
-    </tr>
-      </tbody>
-    </table>
-  </div>
+<div class="section-head">
+<div>
+<p class="eyebrow">Area 2</p>
+<h2>Edge AI / Real-Time Brain MRI Inference</h2>
+<p>Brain-MRI-specific efficiency and real-time neuroanatomy segmentation anchors. Papers are ordered from newest to oldest within this area.</p>
+</div>
+<span class="section-count">2 papers</span>
+</div>
+<div class="table-wrap">
+<table aria-label="Area 2 — Edge AI / Real-Time Brain MRI Inference">
+<thead>
+<tr>
+<th class="year-col">Year</th>
+<th class="focus-col">Focus</th>
+<th class="citation-col">Bibliography / citation in IEEE format</th>
+<th class="problem-col">Research problem addressed</th>
+<th class="method-col">Core methodology / model / experimental design</th>
+<th class="dataset-col">Dataset or experimental setup / best results achieved</th>
+<th class="findings-col">Key findings / results</th>
+<th class="strengths-col">Strengths / contributions</th>
+<th class="limitations-col">Limitations / gaps</th>
+<th class="relevance-col">Relevance to proposed research</th>
+<th class="critical-col">Critical observations / questions</th>
+</tr>
+</thead>
+<tbody>
+
+
+
+<tr data-search="2019 Fast whole-brain segmentation [11] A. G. Roy, S. Conjeti, N. Navab, and C. Wachinger, “QuickNAT: A fully convolutional network for quick and accurate segmentation of neuroanatomy,” NeuroImage, vol. 186, pp. 713–727, 2019, doi: 10.1016/j.neuroimage.2018.11.042. Open paper ↗ Whole-brain MRI segmentation is clinically useful but conventional pipelines can take hours, limiting real-time use. Fully convolutional densely connected network with auxiliary-label pretraining and manual-label fine-tuning. Eight structural brain MRI datasets across age, pathology, and scanners; segments MRI brain scans in roughly 20 seconds. QuickNAT achieved fast, accurate neuroanatomy segmentation, supporting real-time clinical feasibility. Directly brain MRI; strong fit for Edge AI/real-time inference concentration. Whole-brain anatomy rather than tumor-only segmentation; hardware/deployment constraints still require testing. Provides a brain-MRI-specific efficiency anchor without relying on generic mobile-vision papers. Can label-efficient SSL and graph reasoning be added without losing real-time inference speed?">
+<td class="year">2019</td>
+<td><span class="focus">Fast whole-brain segmentation</span></td>
+<td class="citation-cell"><a class="paper-link" href="https://pubmed.ncbi.nlm.nih.gov/30502445/" rel="noopener noreferrer" target="_blank">[11] A. G. Roy, S. Conjeti, N. Navab, and C. Wachinger, “QuickNAT: A fully convolutional network for quick and accurate segmentation of neuroanatomy,” NeuroImage, vol. 186, pp. 713–727, 2019, doi: 10.1016/j.neuroimage.2018.11.042.</a><a class="open-chip" href="https://pubmed.ncbi.nlm.nih.gov/30502445/" rel="noopener noreferrer" target="_blank">Open paper ↗</a></td>
+<td>Whole-brain MRI segmentation is clinically useful but conventional pipelines can take hours, limiting real-time use.</td>
+<td>Fully convolutional densely connected network with auxiliary-label pretraining and manual-label fine-tuning.</td>
+<td>Eight structural brain MRI datasets across age, pathology, and scanners; segments MRI brain scans in roughly 20 seconds.</td>
+<td>QuickNAT achieved fast, accurate neuroanatomy segmentation, supporting real-time clinical feasibility.</td>
+<td>Directly brain MRI; strong fit for Edge AI/real-time inference concentration.</td>
+<td>Whole-brain anatomy rather than tumor-only segmentation; hardware/deployment constraints still require testing.</td>
+<td>Provides a brain-MRI-specific efficiency anchor without relying on generic mobile-vision papers.</td>
+<td>Can label-efficient SSL and graph reasoning be added without losing real-time inference speed?</td>
+</tr>
+<tr data-search="2018 3D neuroanatomy segmentation [12] C. Wachinger, M. Reuter, and T. Klein, “DeepNAT: Deep convolutional neural network for segmenting neuroanatomy,” NeuroImage, vol. 170, pp. 434–445, 2018, doi: 10.1016/j.neuroimage.2017.02.035. Open paper ↗ Automatic segmentation of neuroanatomical brain structures from T1-weighted MRI is needed for quantitative analysis. Hierarchical 3D CNN with multi-task patch prediction, spatial coordinates, and CRF-based refinement. T1-weighted brain MRI neuroanatomy segmentation across 25 brain structures. DeepNAT compared favorably with state-of-the-art neuroanatomy segmentation methods. Brain-MRI-specific; combines CNN representation learning with anatomical spatial information. Patch-based and structure-focused; less directly targeted to tumor subregions or missing-modalities. Relevant for structural/anatomical priors and region-level brain modeling. Can anatomical priors improve tumor segmentation without over-constraining abnormal structures?">
+<td class="year">2018</td>
+<td><span class="focus">3D neuroanatomy segmentation</span></td>
+<td class="citation-cell"><a class="paper-link" href="https://pmc.ncbi.nlm.nih.gov/articles/PMC5563492/" rel="noopener noreferrer" target="_blank">[12] C. Wachinger, M. Reuter, and T. Klein, “DeepNAT: Deep convolutional neural network for segmenting neuroanatomy,” NeuroImage, vol. 170, pp. 434–445, 2018, doi: 10.1016/j.neuroimage.2017.02.035.</a><a class="open-chip" href="https://pmc.ncbi.nlm.nih.gov/articles/PMC5563492/" rel="noopener noreferrer" target="_blank">Open paper ↗</a></td>
+<td>Automatic segmentation of neuroanatomical brain structures from T1-weighted MRI is needed for quantitative analysis.</td>
+<td>Hierarchical 3D CNN with multi-task patch prediction, spatial coordinates, and CRF-based refinement.</td>
+<td>T1-weighted brain MRI neuroanatomy segmentation across 25 brain structures.</td>
+<td>DeepNAT compared favorably with state-of-the-art neuroanatomy segmentation methods.</td>
+<td>Brain-MRI-specific; combines CNN representation learning with anatomical spatial information.</td>
+<td>Patch-based and structure-focused; less directly targeted to tumor subregions or missing-modalities.</td>
+<td>Relevant for structural/anatomical priors and region-level brain modeling.</td>
+<td>Can anatomical priors improve tumor segmentation without over-constraining abnormal structures?</td>
+</tr>
+</tbody>
+</table>
+</div>
 </section>
 <section class="area-section" id="area-3">
-  <div class="section-head">
-    <div>
-      <p class="eyebrow">Area 3</p>
-      <h2>Transformer, Semi-Supervised, and Missing-Modality Brain MRI Segmentation</h2>
-      <p>Long-range context, modality robustness, pseudo-labeling, and limited-label brain MRI segmentation methods.</p>
-    </div>
-    <span class="section-count">8 papers</span>
-  </div>
-  <div class="table-wrap">
-    <table aria-label="Area 3 — Transformer, Semi-Supervised, and Missing-Modality Brain MRI Segmentation">
-      <thead>
-        <tr>
-          <th class="year-col">Year</th>
-          <th class="focus-col">Focus</th>
-          <th class="citation-col">Bibliography / citation in IEEE format</th>
-          <th class="problem-col">Research problem addressed</th>
-          <th class="method-col">Core methodology / model / experimental design</th>
-          <th class="dataset-col">Dataset or experimental setup / best results achieved</th>
-          <th class="findings-col">Key findings / results</th>
-          <th class="strengths-col">Strengths / contributions</th>
-          <th class="limitations-col">Limitations / gaps</th>
-          <th class="relevance-col">Relevance to proposed research</th>
-          <th class="critical-col">Critical observations / questions</th>
-        </tr>
-      </thead>
-      <tbody>
-<tr data-search="13 Area 3 — Transformer, Semi-Supervised, and Missing-Modality Brain MRI Segmentation 2025 Efficient Mamba-based brain tumor segmentation [13] D. Ali, A. Mian, N. Akhtar, and G. M. Hassan, “DRBD-Mamba for robust and efficient brain tumor segmentation with analytical insights,” arXiv:2510.14383, 2025. Brain tumor segmentation needs long-range 3D context, but efficient and robust sequence modeling across BraTS partitions remains difficult. Dual-resolution bidirectional Mamba architecture using space-filling curve feature ordering, gated context fusion, and vector quantization for robust 3D tumor segmentation. BraTS 2023 brain tumor MRI experiments with systematic folds and reported efficiency-focused evaluation. Reported competitive tumor-subregion segmentation while substantially improving computational efficiency compared with heavier long-range modeling designs. Brain-tumor-specific; recent efficient 3D modeling paper; relevant to real-time and deployable inference concerns. Preprint-stage work; requires independent validation, clinical workflow testing, and comparison under consistent hardware constraints. Provides a recent brain-MRI-specific alternative to transformer attention for efficient long-range volumetric segmentation. Can efficient Mamba-style long-range modeling be combined with SSL and graph reasoning without increasing annotation requirements?">
-      <td class="year">2025</td>
-      <td><span class="focus">Efficient Mamba-based brain tumor segmentation</span></td>
-      <td class="citation-cell"><a class="paper-link" href="https://arxiv.org/pdf/2510.14383" target="_blank" rel="noopener noreferrer">[13] D. Ali, A. Mian, N. Akhtar, and G. M. Hassan, “DRBD-Mamba for robust and efficient brain tumor segmentation with analytical insights,” arXiv:2510.14383, 2025.</a><a class="open-chip" href="https://arxiv.org/pdf/2510.14383" target="_blank" rel="noopener noreferrer">Open paper ↗</a></td>
-      <td>Brain tumor segmentation needs long-range 3D context, but efficient and robust sequence modeling across BraTS partitions remains difficult.</td>
-      <td>Dual-resolution bidirectional Mamba architecture using space-filling curve feature ordering, gated context fusion, and vector quantization for robust 3D tumor segmentation.</td>
-      <td>BraTS 2023 brain tumor MRI experiments with systematic folds and reported efficiency-focused evaluation.</td>
-      <td>Reported competitive tumor-subregion segmentation while substantially improving computational efficiency compared with heavier long-range modeling designs.</td>
-      <td>Brain-tumor-specific; recent efficient 3D modeling paper; relevant to real-time and deployable inference concerns.</td>
-      <td>Preprint-stage work; requires independent validation, clinical workflow testing, and comparison under consistent hardware constraints.</td>
-      <td>Provides a recent brain-MRI-specific alternative to transformer attention for efficient long-range volumetric segmentation.</td>
-      <td>Can efficient Mamba-style long-range modeling be combined with SSL and graph reasoning without increasing annotation requirements?</td>
-    </tr>
-<tr data-search="14 Area 3 — Transformer, Semi-Supervised, and Missing-Modality Brain MRI Segmentation 2025 Semi-supervised brain metastasis segmentation [14] J. A. Ottesen, et al., “Semi-supervised learning allows for improved segmentation of brain metastases,” Journal of Magnetic Resonance Imaging, 2025. Brain metastasis segmentation requires expert voxelwise labels, but annotation is expensive and difficult for small lesions. Semi-supervised learning framework comparing supervised baselines with models trained using additional unlabeled brain MRI data. Brain metastasis MRI data with internal and external test evaluation. Semi-supervised learning improved segmentation over supervised baselines, especially in small-labeled-data and external-test settings. Brain-MRI-specific; directly supports label-efficient segmentation of small metastatic lesions. Metastasis-specific; needs comparison with broader glioma and multi-dataset settings. Strong support for the proposed low-label brain MRI segmentation direction. Can SSL reduce false negatives for very small lesions without increasing false positives?">
-      <td class="year">2025</td>
-      <td><span class="focus">Semi-supervised brain metastasis segmentation</span></td>
-      <td class="citation-cell"><a class="paper-link" href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12063759/" target="_blank" rel="noopener noreferrer">[14] J. A. Ottesen, et al., “Semi-supervised learning allows for improved segmentation of brain metastases,” Journal of Magnetic Resonance Imaging, 2025.</a><a class="open-chip" href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12063759/" target="_blank" rel="noopener noreferrer">Open paper ↗</a></td>
-      <td>Brain metastasis segmentation requires expert voxelwise labels, but annotation is expensive and difficult for small lesions.</td>
-      <td>Semi-supervised learning framework comparing supervised baselines with models trained using additional unlabeled brain MRI data.</td>
-      <td>Brain metastasis MRI data with internal and external test evaluation.</td>
-      <td>Semi-supervised learning improved segmentation over supervised baselines, especially in small-labeled-data and external-test settings.</td>
-      <td>Brain-MRI-specific; directly supports label-efficient segmentation of small metastatic lesions.</td>
-      <td>Metastasis-specific; needs comparison with broader glioma and multi-dataset settings.</td>
-      <td>Strong support for the proposed low-label brain MRI segmentation direction.</td>
-      <td>Can SSL reduce false negatives for very small lesions without increasing false positives?</td>
-    </tr>
-<tr data-search="15 Area 3 — Transformer, Semi-Supervised, and Missing-Modality Brain MRI Segmentation 2023 Clinical-knowledge-guided multimodal transformer [15] J. Lin, J. Lin, C. Lu, et al., “CKD-TransBTS: Clinical knowledge-driven hybrid transformer with modality-correlated cross-attention for brain tumor segmentation,” IEEE Transactions on Medical Imaging, 2023. Naively concatenating MRI modalities may ignore how radiologists interpret modality relationships during brain tumor assessment. Dual-branch hybrid encoder with modality-correlated cross-attention and Trans&amp;CNN feature calibration. BraTS 2021 brain tumor segmentation challenge; compared with CNN and transformer baselines. Achieved state-of-the-art brain tumor segmentation performance among compared methods. Brain-MRI-specific; clinically motivated multimodal fusion; strong survey anchor. Longer inference time; depends on modality grouping assumptions and complete multimodal data. Supports the proposed need for clinically meaningful feature fusion and modality reasoning. Can clinical-knowledge fusion be combined with SSL and graph structures for better low-label performance?">
-      <td class="year">2023</td>
-      <td><span class="focus">Clinical-knowledge-guided multimodal transformer</span></td>
-      <td class="citation-cell"><a class="paper-link" href="https://arxiv.org/pdf/2207.07370" target="_blank" rel="noopener noreferrer">[15] J. Lin, J. Lin, C. Lu, et al., “CKD-TransBTS: Clinical knowledge-driven hybrid transformer with modality-correlated cross-attention for brain tumor segmentation,” IEEE Transactions on Medical Imaging, 2023.</a><a class="open-chip" href="https://arxiv.org/pdf/2207.07370" target="_blank" rel="noopener noreferrer">Open paper ↗</a></td>
-      <td>Naively concatenating MRI modalities may ignore how radiologists interpret modality relationships during brain tumor assessment.</td>
-      <td>Dual-branch hybrid encoder with modality-correlated cross-attention and Trans&amp;CNN feature calibration.</td>
-      <td>BraTS 2021 brain tumor segmentation challenge; compared with CNN and transformer baselines.</td>
-      <td>Achieved state-of-the-art brain tumor segmentation performance among compared methods.</td>
-      <td>Brain-MRI-specific; clinically motivated multimodal fusion; strong survey anchor.</td>
-      <td>Longer inference time; depends on modality grouping assumptions and complete multimodal data.</td>
-      <td>Supports the proposed need for clinically meaningful feature fusion and modality reasoning.</td>
-      <td>Can clinical-knowledge fusion be combined with SSL and graph structures for better low-label performance?</td>
-    </tr>
-<tr data-search="16 Area 3 — Transformer, Semi-Supervised, and Missing-Modality Brain MRI Segmentation 2022 Swin Transformer brain tumor segmentation [16] A. Hatamizadeh, V. Nath, Y. Tang, D. Yang, H. Roth, and D. Xu, “Swin UNETR: Swin transformers for semantic segmentation of brain tumors in MRI images,” arXiv:2201.01266, 2022. Brain tumors vary in size and spatial extent, requiring both local detail and long-range modeling in multimodal MRI. Swin Transformer encoder with U-shaped decoder and skip connections for 3D sequence-to-sequence tumor segmentation. BraTS 2021 brain tumor segmentation challenge. Ranked among top-performing approaches in BraTS 2021 validation. Brain-MRI-specific; directly links Swin Transformer hierarchy with U-Net decoding. High memory and training cost; still relies on labeled BraTS-style annotations. Important transformer baseline for the proposed brain MRI segmentation direction. Can Swin-based features support graph construction or SSL without excessive computational cost?">
-      <td class="year">2022</td>
-      <td><span class="focus">Swin Transformer brain tumor segmentation</span></td>
-      <td class="citation-cell"><a class="paper-link" href="https://arxiv.org/pdf/2201.01266" target="_blank" rel="noopener noreferrer">[16] A. Hatamizadeh, V. Nath, Y. Tang, D. Yang, H. Roth, and D. Xu, “Swin UNETR: Swin transformers for semantic segmentation of brain tumors in MRI images,” arXiv:2201.01266, 2022.</a><a class="open-chip" href="https://arxiv.org/pdf/2201.01266" target="_blank" rel="noopener noreferrer">Open paper ↗</a></td>
-      <td>Brain tumors vary in size and spatial extent, requiring both local detail and long-range modeling in multimodal MRI.</td>
-      <td>Swin Transformer encoder with U-shaped decoder and skip connections for 3D sequence-to-sequence tumor segmentation.</td>
-      <td>BraTS 2021 brain tumor segmentation challenge.</td>
-      <td>Ranked among top-performing approaches in BraTS 2021 validation.</td>
-      <td>Brain-MRI-specific; directly links Swin Transformer hierarchy with U-Net decoding.</td>
-      <td>High memory and training cost; still relies on labeled BraTS-style annotations.</td>
-      <td>Important transformer baseline for the proposed brain MRI segmentation direction.</td>
-      <td>Can Swin-based features support graph construction or SSL without excessive computational cost?</td>
-    </tr>
-<tr data-search="17 Area 3 — Transformer, Semi-Supervised, and Missing-Modality Brain MRI Segmentation 2022 Incomplete multimodal transformer [17] Y. Zhang, N. He, J. Yang, et al., “mmFormer: Multimodal medical transformer for incomplete multimodal learning of brain tumor segmentation,” arXiv:2206.02425, 2022. Clinical brain MRI often lacks one or more modalities, causing performance drops in models trained on complete multimodal inputs. Hybrid modality-specific encoders, intra-modal and inter-modal transformer modules, and auxiliary regularizers for incomplete-modality robustness. BraTS 2018 brain tumor MRI; evaluated segmentation under many missing-modality combinations. Improved incomplete-modality segmentation, especially when only one modality is available. Brain-tumor-specific; directly addresses missing modalities, a key clinical gap. Complex architecture; requires systematic validation across external institutions. Essential for the survey’s missing-modality gap and proposed robust brain MRI direction. Should missing modalities be handled through synthesis, modality dropout, feature alignment, or graph-level fusion?">
-      <td class="year">2022</td>
-      <td><span class="focus">Incomplete multimodal transformer</span></td>
-      <td class="citation-cell"><a class="paper-link" href="https://arxiv.org/pdf/2206.02425" target="_blank" rel="noopener noreferrer">[17] Y. Zhang, N. He, J. Yang, et al., “mmFormer: Multimodal medical transformer for incomplete multimodal learning of brain tumor segmentation,” arXiv:2206.02425, 2022.</a><a class="open-chip" href="https://arxiv.org/pdf/2206.02425" target="_blank" rel="noopener noreferrer">Open paper ↗</a></td>
-      <td>Clinical brain MRI often lacks one or more modalities, causing performance drops in models trained on complete multimodal inputs.</td>
-      <td>Hybrid modality-specific encoders, intra-modal and inter-modal transformer modules, and auxiliary regularizers for incomplete-modality robustness.</td>
-      <td>BraTS 2018 brain tumor MRI; evaluated segmentation under many missing-modality combinations.</td>
-      <td>Improved incomplete-modality segmentation, especially when only one modality is available.</td>
-      <td>Brain-tumor-specific; directly addresses missing modalities, a key clinical gap.</td>
-      <td>Complex architecture; requires systematic validation across external institutions.</td>
-      <td>Essential for the survey’s missing-modality gap and proposed robust brain MRI direction.</td>
-      <td>Should missing modalities be handled through synthesis, modality dropout, feature alignment, or graph-level fusion?</td>
-    </tr>
-<tr data-search="18 Area 3 — Transformer, Semi-Supervised, and Missing-Modality Brain MRI Segmentation 2022 Pseudo-labeling for brain MRI [18] C. T. Sari, S. Kurugol, O. Afacan, and S. K. Warfield, “CORPS: Cost-free rigorous pseudo-labeling based on similarity-ranking for brain MRI segmentation,” arXiv:2205.09601, 2022. Brain MRI segmentation suffers from limited labeled data, while unlabeled scans remain abundant. Atlas-based pseudo-labeling ordered by local intensity similarity, followed by 3D DCNN training on expert and pseudo-labeled scans. 3D brain MRI segmentation with labeled and unlabeled scans; focuses on binary segmentation of anatomical structures. Pseudo-labeling improved segmentation without additional manual labeling cost. Brain-MRI-specific; directly addresses label scarcity with pseudo-labeling. Pseudo-label quality depends on similarity ranking and atlas/label-fusion assumptions. Directly relevant to proposed pseudo-label generation and limited-label optimization. How can uncertainty filtering prevent poor pseudo-labels from propagating into downstream models?">
-      <td class="year">2022</td>
-      <td><span class="focus">Pseudo-labeling for brain MRI</span></td>
-      <td class="citation-cell"><a class="paper-link" href="https://arxiv.org/pdf/2205.09601" target="_blank" rel="noopener noreferrer">[18] C. T. Sari, S. Kurugol, O. Afacan, and S. K. Warfield, “CORPS: Cost-free rigorous pseudo-labeling based on similarity-ranking for brain MRI segmentation,” arXiv:2205.09601, 2022.</a><a class="open-chip" href="https://arxiv.org/pdf/2205.09601" target="_blank" rel="noopener noreferrer">Open paper ↗</a></td>
-      <td>Brain MRI segmentation suffers from limited labeled data, while unlabeled scans remain abundant.</td>
-      <td>Atlas-based pseudo-labeling ordered by local intensity similarity, followed by 3D DCNN training on expert and pseudo-labeled scans.</td>
-      <td>3D brain MRI segmentation with labeled and unlabeled scans; focuses on binary segmentation of anatomical structures.</td>
-      <td>Pseudo-labeling improved segmentation without additional manual labeling cost.</td>
-      <td>Brain-MRI-specific; directly addresses label scarcity with pseudo-labeling.</td>
-      <td>Pseudo-label quality depends on similarity ranking and atlas/label-fusion assumptions.</td>
-      <td>Directly relevant to proposed pseudo-label generation and limited-label optimization.</td>
-      <td>How can uncertainty filtering prevent poor pseudo-labels from propagating into downstream models?</td>
-    </tr>
-<tr data-search="19 Area 3 — Transformer, Semi-Supervised, and Missing-Modality Brain MRI Segmentation 2021 CNN–Transformer brain tumor segmentation [19] W. Wang, C. Chen, M. Ding, J. Li, H. Yu, and S. Zha, “TransBTS: Multimodal brain tumor segmentation using transformer,” in MICCAI, 2021. CNNs capture local features but may struggle with long-range dependencies in 3D multimodal brain tumor MRI. 3D CNN encoder for local volumetric features, transformer bottleneck for global context, and decoder for dense segmentation. BraTS 2019 and BraTS 2020 multimodal brain tumor MRI datasets. Hybrid CNN–Transformer modeling achieved competitive or higher segmentation performance than prior 3D methods. Brain-MRI-specific; foundational CNN–Transformer paper for BraTS segmentation. Transformer component increases computational cost; requires labeled multimodal inputs. Core method anchor for transformer-based brain MRI segmentation in the survey. Can transformer context be retained while improving speed and low-label robustness?">
-      <td class="year">2021</td>
-      <td><span class="focus">CNN–Transformer brain tumor segmentation</span></td>
-      <td class="citation-cell"><a class="paper-link" href="https://arxiv.org/pdf/2103.04430" target="_blank" rel="noopener noreferrer">[19] W. Wang, C. Chen, M. Ding, J. Li, H. Yu, and S. Zha, “TransBTS: Multimodal brain tumor segmentation using transformer,” in MICCAI, 2021.</a><a class="open-chip" href="https://arxiv.org/pdf/2103.04430" target="_blank" rel="noopener noreferrer">Open paper ↗</a></td>
-      <td>CNNs capture local features but may struggle with long-range dependencies in 3D multimodal brain tumor MRI.</td>
-      <td>3D CNN encoder for local volumetric features, transformer bottleneck for global context, and decoder for dense segmentation.</td>
-      <td>BraTS 2019 and BraTS 2020 multimodal brain tumor MRI datasets.</td>
-      <td>Hybrid CNN–Transformer modeling achieved competitive or higher segmentation performance than prior 3D methods.</td>
-      <td>Brain-MRI-specific; foundational CNN–Transformer paper for BraTS segmentation.</td>
-      <td>Transformer component increases computational cost; requires labeled multimodal inputs.</td>
-      <td>Core method anchor for transformer-based brain MRI segmentation in the survey.</td>
-      <td>Can transformer context be retained while improving speed and low-label robustness?</td>
-    </tr>
-<tr data-search="20 Area 3 — Transformer, Semi-Supervised, and Missing-Modality Brain MRI Segmentation 2021 Self-supervised pretraining with CNN–Transformer ensembles [20] M. Dobko, D.-I. Kolinko, O. Viniavskyi, and Y. Yelisieiev, “Combining CNNs with transformer for multimodal 3D MRI brain tumor segmentation with self-supervised pretraining,” arXiv:2110.07919, 2021. BraTS segmentation needs accurate multimodal 3D models while benefiting from better initialization and representation learning. Modified TransBTS, nnU-Net, and ensemble strategy with self-supervised pretraining elements. BraTS 2021 validation set; reported Dice scores of 0.8496 ET, 0.8698 TC, and 0.9256 WT. Hybrid CNN–Transformer and nnU-Net ensembles can improve BraTS tumor subregion segmentation. Brain-MRI-specific; connects transformer segmentation with self-supervised pretraining. Ensemble complexity and compute cost may limit real-time deployment. Directly supports the survey’s SSL + transformer direction. Can similar gains be achieved with a single efficient model rather than an ensemble?">
-      <td class="year">2021</td>
-      <td><span class="focus">Self-supervised pretraining with CNN–Transformer ensembles</span></td>
-      <td class="citation-cell"><a class="paper-link" href="https://arxiv.org/pdf/2110.07919" target="_blank" rel="noopener noreferrer">[20] M. Dobko, D.-I. Kolinko, O. Viniavskyi, and Y. Yelisieiev, “Combining CNNs with transformer for multimodal 3D MRI brain tumor segmentation with self-supervised pretraining,” arXiv:2110.07919, 2021.</a><a class="open-chip" href="https://arxiv.org/pdf/2110.07919" target="_blank" rel="noopener noreferrer">Open paper ↗</a></td>
-      <td>BraTS segmentation needs accurate multimodal 3D models while benefiting from better initialization and representation learning.</td>
-      <td>Modified TransBTS, nnU-Net, and ensemble strategy with self-supervised pretraining elements.</td>
-      <td>BraTS 2021 validation set; reported Dice scores of 0.8496 ET, 0.8698 TC, and 0.9256 WT.</td>
-      <td>Hybrid CNN–Transformer and nnU-Net ensembles can improve BraTS tumor subregion segmentation.</td>
-      <td>Brain-MRI-specific; connects transformer segmentation with self-supervised pretraining.</td>
-      <td>Ensemble complexity and compute cost may limit real-time deployment.</td>
-      <td>Directly supports the survey’s SSL + transformer direction.</td>
-      <td>Can similar gains be achieved with a single efficient model rather than an ensemble?</td>
-    </tr>
-      </tbody>
-    </table>
-  </div>
+<div class="section-head">
+<div>
+<p class="eyebrow">Area 3</p>
+<h2>Transformer, Semi-Supervised, and Missing-Modality Brain MRI Segmentation</h2>
+<p>Long-range context, modality robustness, pseudo-labeling, and limited-label brain MRI segmentation methods. Papers are ordered from newest to oldest within this area.</p>
+</div>
+<span class="section-count">8 papers</span>
+</div>
+<div class="table-wrap">
+<table aria-label="Area 3 — Transformer, Semi-Supervised, and Missing-Modality Brain MRI Segmentation">
+<thead>
+<tr>
+<th class="year-col">Year</th>
+<th class="focus-col">Focus</th>
+<th class="citation-col">Bibliography / citation in IEEE format</th>
+<th class="problem-col">Research problem addressed</th>
+<th class="method-col">Core methodology / model / experimental design</th>
+<th class="dataset-col">Dataset or experimental setup / best results achieved</th>
+<th class="findings-col">Key findings / results</th>
+<th class="strengths-col">Strengths / contributions</th>
+<th class="limitations-col">Limitations / gaps</th>
+<th class="relevance-col">Relevance to proposed research</th>
+<th class="critical-col">Critical observations / questions</th>
+</tr>
+</thead>
+<tbody>
+
+
+
+
+
+
+
+
+
+<tr data-search="2025 Efficient Mamba-based brain tumor segmentation [13] D. Ali, A. Mian, N. Akhtar, and G. M. Hassan, “DRBD-Mamba for robust and efficient brain tumor segmentation with analytical insights,” arXiv:2510.14383, 2025. Open paper ↗ Brain tumor segmentation needs long-range 3D context, but efficient and robust sequence modeling across BraTS partitions remains difficult. Dual-resolution bidirectional Mamba architecture using space-filling curve feature ordering, gated context fusion, and vector quantization for robust 3D tumor segmentation. BraTS 2023 brain tumor MRI experiments with systematic folds and reported efficiency-focused evaluation. Reported competitive tumor-subregion segmentation while substantially improving computational efficiency compared with heavier long-range modeling designs. Brain-tumor-specific; recent efficient 3D modeling paper; relevant to real-time and deployable inference concerns. Preprint-stage work; requires independent validation, clinical workflow testing, and comparison under consistent hardware constraints. Provides a recent brain-MRI-specific alternative to transformer attention for efficient long-range volumetric segmentation. Can efficient Mamba-style long-range modeling be combined with SSL and graph reasoning without increasing annotation requirements?">
+<td class="year">2025</td>
+<td><span class="focus">Efficient Mamba-based brain tumor segmentation</span></td>
+<td class="citation-cell"><a class="paper-link" href="https://arxiv.org/pdf/2510.14383" rel="noopener noreferrer" target="_blank">[13] D. Ali, A. Mian, N. Akhtar, and G. M. Hassan, “DRBD-Mamba for robust and efficient brain tumor segmentation with analytical insights,” arXiv:2510.14383, 2025.</a><a class="open-chip" href="https://arxiv.org/pdf/2510.14383" rel="noopener noreferrer" target="_blank">Open paper ↗</a></td>
+<td>Brain tumor segmentation needs long-range 3D context, but efficient and robust sequence modeling across BraTS partitions remains difficult.</td>
+<td>Dual-resolution bidirectional Mamba architecture using space-filling curve feature ordering, gated context fusion, and vector quantization for robust 3D tumor segmentation.</td>
+<td>BraTS 2023 brain tumor MRI experiments with systematic folds and reported efficiency-focused evaluation.</td>
+<td>Reported competitive tumor-subregion segmentation while substantially improving computational efficiency compared with heavier long-range modeling designs.</td>
+<td>Brain-tumor-specific; recent efficient 3D modeling paper; relevant to real-time and deployable inference concerns.</td>
+<td>Preprint-stage work; requires independent validation, clinical workflow testing, and comparison under consistent hardware constraints.</td>
+<td>Provides a recent brain-MRI-specific alternative to transformer attention for efficient long-range volumetric segmentation.</td>
+<td>Can efficient Mamba-style long-range modeling be combined with SSL and graph reasoning without increasing annotation requirements?</td>
+</tr>
+<tr data-search="2025 Semi-supervised brain metastasis segmentation [14] J. A. Ottesen et al., “Semi-supervised learning allows for improved segmentation with reduced annotations of brain metastases using multicenter MRI data,” Journal of Magnetic Resonance Imaging, vol. 61, no. 6, pp. 2469–2479, 2025, doi: 10.1002/jmri.29686. Open paper ↗ Brain metastasis segmentation requires expert voxelwise labels, but annotation is expensive and difficult for small lesions. Semi-supervised learning framework comparing supervised baselines with models trained using additional unlabeled brain MRI data. Brain metastasis MRI data with internal and external test evaluation. Semi-supervised learning improved segmentation over supervised baselines, especially in small-labeled-data and external-test settings. Brain-MRI-specific; directly supports label-efficient segmentation of small metastatic lesions. Metastasis-specific; needs comparison with broader glioma and multi-dataset settings. Strong support for the proposed low-label brain MRI segmentation direction. Can SSL reduce false negatives for very small lesions without increasing false positives?">
+<td class="year">2025</td>
+<td><span class="focus">Semi-supervised brain metastasis segmentation</span></td>
+<td class="citation-cell"><a class="paper-link" href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12063759/" rel="noopener noreferrer" target="_blank">[14] J. A. Ottesen et al., “Semi-supervised learning allows for improved segmentation with reduced annotations of brain metastases using multicenter MRI data,” Journal of Magnetic Resonance Imaging, vol. 61, no. 6, pp. 2469–2479, 2025, doi: 10.1002/jmri.29686.</a><a class="open-chip" href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12063759/" rel="noopener noreferrer" target="_blank">Open paper ↗</a></td>
+<td>Brain metastasis segmentation requires expert voxelwise labels, but annotation is expensive and difficult for small lesions.</td>
+<td>Semi-supervised learning framework comparing supervised baselines with models trained using additional unlabeled brain MRI data.</td>
+<td>Brain metastasis MRI data with internal and external test evaluation.</td>
+<td>Semi-supervised learning improved segmentation over supervised baselines, especially in small-labeled-data and external-test settings.</td>
+<td>Brain-MRI-specific; directly supports label-efficient segmentation of small metastatic lesions.</td>
+<td>Metastasis-specific; needs comparison with broader glioma and multi-dataset settings.</td>
+<td>Strong support for the proposed low-label brain MRI segmentation direction.</td>
+<td>Can SSL reduce false negatives for very small lesions without increasing false positives?</td>
+</tr>
+<tr data-search="2023 Clinical-knowledge-guided multimodal transformer [15] J. Lin, J. Lin, C. Lu, H. Chen, H. Lin, B. Zhao, Z. Shi, B. Qiu, X. Pan, Z. Xu, B. Huang, C. Liang, G. Han, Z. Liu, and C. Han, “CKD-TransBTS: Clinical knowledge-driven hybrid transformer with modality-correlated cross-attention for brain tumor segmentation,” IEEE Transactions on Medical Imaging, vol. 42, no. 8, pp. 2451–2461, Aug. 2023, doi: 10.1109/TMI.2023.3250474. Open paper ↗ Naively concatenating MRI modalities may ignore how radiologists interpret modality relationships during brain tumor assessment. Dual-branch hybrid encoder with modality-correlated cross-attention and Trans&amp;CNN feature calibration. BraTS 2021 brain tumor segmentation challenge; compared with CNN and transformer baselines. Achieved state-of-the-art brain tumor segmentation performance among compared methods. Brain-MRI-specific; clinically motivated multimodal fusion; strong survey anchor. Longer inference time; depends on modality grouping assumptions and complete multimodal data. Supports the proposed need for clinically meaningful feature fusion and modality reasoning. Can clinical-knowledge fusion be combined with SSL and graph structures for better low-label performance?">
+<td class="year">2023</td>
+<td><span class="focus">Clinical-knowledge-guided multimodal transformer</span></td>
+<td class="citation-cell"><a class="paper-link" href="https://doi.org/10.1109/TMI.2023.3250474" rel="noopener noreferrer" target="_blank">[15] J. Lin, J. Lin, C. Lu, H. Chen, H. Lin, B. Zhao, Z. Shi, B. Qiu, X. Pan, Z. Xu, B. Huang, C. Liang, G. Han, Z. Liu, and C. Han, “CKD-TransBTS: Clinical knowledge-driven hybrid transformer with modality-correlated cross-attention for brain tumor segmentation,” IEEE Transactions on Medical Imaging, vol. 42, no. 8, pp. 2451–2461, Aug. 2023, doi: 10.1109/TMI.2023.3250474.</a><a class="open-chip" href="https://doi.org/10.1109/TMI.2023.3250474" rel="noopener noreferrer" target="_blank">Open paper ↗</a></td>
+<td>Naively concatenating MRI modalities may ignore how radiologists interpret modality relationships during brain tumor assessment.</td>
+<td>Dual-branch hybrid encoder with modality-correlated cross-attention and Trans&amp;CNN feature calibration.</td>
+<td>BraTS 2021 brain tumor segmentation challenge; compared with CNN and transformer baselines.</td>
+<td>Achieved state-of-the-art brain tumor segmentation performance among compared methods.</td>
+<td>Brain-MRI-specific; clinically motivated multimodal fusion; strong survey anchor.</td>
+<td>Longer inference time; depends on modality grouping assumptions and complete multimodal data.</td>
+<td>Supports the proposed need for clinically meaningful feature fusion and modality reasoning.</td>
+<td>Can clinical-knowledge fusion be combined with SSL and graph structures for better low-label performance?</td>
+</tr>
+<tr data-search="2022 Swin Transformer brain tumor segmentation [16] A. Hatamizadeh, V. Nath, Y. Tang, D. Yang, H. R. Roth, and D. Xu, “Swin UNETR: Swin transformers for semantic segmentation of brain tumors in MRI images,” in Brainlesion: Glioma, Multiple Sclerosis, Stroke and Traumatic Brain Injuries, Cham, Switzerland: Springer, 2022, pp. 272–284, doi: 10.1007/978-3-031-08999-2_22. Open paper ↗ Brain tumors vary in size and spatial extent, requiring both local detail and long-range modeling in multimodal MRI. Swin Transformer encoder with U-shaped decoder and skip connections for 3D sequence-to-sequence tumor segmentation. BraTS 2021 brain tumor segmentation challenge. Ranked among top-performing approaches in BraTS 2021 validation. Brain-MRI-specific; directly links Swin Transformer hierarchy with U-Net decoding. High memory and training cost; still relies on labeled BraTS-style annotations. Important transformer baseline for the proposed brain MRI segmentation direction. Can Swin-based features support graph construction or SSL without excessive computational cost?">
+<td class="year">2022</td>
+<td><span class="focus">Swin Transformer brain tumor segmentation</span></td>
+<td class="citation-cell"><a class="paper-link" href="https://dl.acm.org/doi/10.1007/978-3-031-08999-2_22" rel="noopener noreferrer" target="_blank">[16] A. Hatamizadeh, V. Nath, Y. Tang, D. Yang, H. R. Roth, and D. Xu, “Swin UNETR: Swin transformers for semantic segmentation of brain tumors in MRI images,” in Brainlesion: Glioma, Multiple Sclerosis, Stroke and Traumatic Brain Injuries, Cham, Switzerland: Springer, 2022, pp. 272–284, doi: 10.1007/978-3-031-08999-2_22.</a><a class="open-chip" href="https://dl.acm.org/doi/10.1007/978-3-031-08999-2_22" rel="noopener noreferrer" target="_blank">Open paper ↗</a></td>
+<td>Brain tumors vary in size and spatial extent, requiring both local detail and long-range modeling in multimodal MRI.</td>
+<td>Swin Transformer encoder with U-shaped decoder and skip connections for 3D sequence-to-sequence tumor segmentation.</td>
+<td>BraTS 2021 brain tumor segmentation challenge.</td>
+<td>Ranked among top-performing approaches in BraTS 2021 validation.</td>
+<td>Brain-MRI-specific; directly links Swin Transformer hierarchy with U-Net decoding.</td>
+<td>High memory and training cost; still relies on labeled BraTS-style annotations.</td>
+<td>Important transformer baseline for the proposed brain MRI segmentation direction.</td>
+<td>Can Swin-based features support graph construction or SSL without excessive computational cost?</td>
+</tr>
+<tr data-search="2022 Incomplete multimodal transformer [17] Y. Zhang, N. He, J. Yang, Y. Li, D. Wei, Y. Huang, Y. Zhang, Z. He, and Y. Zheng, “mmFormer: Multimodal medical transformer for incomplete multimodal learning of brain tumor segmentation,” in Medical Image Computing and Computer Assisted Intervention – MICCAI 2022, Singapore, 2022, pp. 107–117, doi: 10.1007/978-3-031-16443-9_11. Open paper ↗ Clinical brain MRI often lacks one or more modalities, causing performance drops in models trained on complete multimodal inputs. Hybrid modality-specific encoders, intra-modal and inter-modal transformer modules, and auxiliary regularizers for incomplete-modality robustness. BraTS 2018 brain tumor MRI; evaluated segmentation under many missing-modality combinations. Improved incomplete-modality segmentation, especially when only one modality is available. Brain-tumor-specific; directly addresses missing modalities, a key clinical gap. Complex architecture; requires systematic validation across external institutions. Essential for the survey’s missing-modality gap and proposed robust brain MRI direction. Should missing modalities be handled through synthesis, modality dropout, feature alignment, or graph-level fusion?">
+<td class="year">2022</td>
+<td><span class="focus">Incomplete multimodal transformer</span></td>
+<td class="citation-cell"><a class="paper-link" href="https://dl.acm.org/doi/10.1007/978-3-031-16443-9_11" rel="noopener noreferrer" target="_blank">[17] Y. Zhang, N. He, J. Yang, Y. Li, D. Wei, Y. Huang, Y. Zhang, Z. He, and Y. Zheng, “mmFormer: Multimodal medical transformer for incomplete multimodal learning of brain tumor segmentation,” in Medical Image Computing and Computer Assisted Intervention – MICCAI 2022, Singapore, 2022, pp. 107–117, doi: 10.1007/978-3-031-16443-9_11.</a><a class="open-chip" href="https://dl.acm.org/doi/10.1007/978-3-031-16443-9_11" rel="noopener noreferrer" target="_blank">Open paper ↗</a></td>
+<td>Clinical brain MRI often lacks one or more modalities, causing performance drops in models trained on complete multimodal inputs.</td>
+<td>Hybrid modality-specific encoders, intra-modal and inter-modal transformer modules, and auxiliary regularizers for incomplete-modality robustness.</td>
+<td>BraTS 2018 brain tumor MRI; evaluated segmentation under many missing-modality combinations.</td>
+<td>Improved incomplete-modality segmentation, especially when only one modality is available.</td>
+<td>Brain-tumor-specific; directly addresses missing modalities, a key clinical gap.</td>
+<td>Complex architecture; requires systematic validation across external institutions.</td>
+<td>Essential for the survey’s missing-modality gap and proposed robust brain MRI direction.</td>
+<td>Should missing modalities be handled through synthesis, modality dropout, feature alignment, or graph-level fusion?</td>
+</tr>
+<tr data-search="2022 Pseudo-labeling for brain MRI [18] C. T. Sari, S. Kurugol, O. Afacan, and S. K. Warfield, “CORPS: Cost-free rigorous pseudo-labeling based on similarity-ranking for brain MRI segmentation,” arXiv:2205.09601, 2022. Open paper ↗ Brain MRI segmentation suffers from limited labeled data, while unlabeled scans remain abundant. Atlas-based pseudo-labeling ordered by local intensity similarity, followed by 3D DCNN training on expert and pseudo-labeled scans. 3D brain MRI segmentation with labeled and unlabeled scans; focuses on binary segmentation of anatomical structures. Pseudo-labeling improved segmentation without additional manual labeling cost. Brain-MRI-specific; directly addresses label scarcity with pseudo-labeling. Pseudo-label quality depends on similarity ranking and atlas/label-fusion assumptions. Directly relevant to proposed pseudo-label generation and limited-label optimization. How can uncertainty filtering prevent poor pseudo-labels from propagating into downstream models?">
+<td class="year">2022</td>
+<td><span class="focus">Pseudo-labeling for brain MRI</span></td>
+<td class="citation-cell"><a class="paper-link" href="https://arxiv.org/pdf/2205.09601" rel="noopener noreferrer" target="_blank">[18] C. T. Sari, S. Kurugol, O. Afacan, and S. K. Warfield, “CORPS: Cost-free rigorous pseudo-labeling based on similarity-ranking for brain MRI segmentation,” arXiv:2205.09601, 2022.</a><a class="open-chip" href="https://arxiv.org/pdf/2205.09601" rel="noopener noreferrer" target="_blank">Open paper ↗</a></td>
+<td>Brain MRI segmentation suffers from limited labeled data, while unlabeled scans remain abundant.</td>
+<td>Atlas-based pseudo-labeling ordered by local intensity similarity, followed by 3D DCNN training on expert and pseudo-labeled scans.</td>
+<td>3D brain MRI segmentation with labeled and unlabeled scans; focuses on binary segmentation of anatomical structures.</td>
+<td>Pseudo-labeling improved segmentation without additional manual labeling cost.</td>
+<td>Brain-MRI-specific; directly addresses label scarcity with pseudo-labeling.</td>
+<td>Pseudo-label quality depends on similarity ranking and atlas/label-fusion assumptions.</td>
+<td>Directly relevant to proposed pseudo-label generation and limited-label optimization.</td>
+<td>How can uncertainty filtering prevent poor pseudo-labels from propagating into downstream models?</td>
+</tr>
+<tr data-search="2022 Self-supervised pretraining with CNN–Transformer ensembles [20] M. Dobko, D.-I. Kolinko, O. Viniavskyi, and Y. Yelisieiev, “Combining CNNs with transformer for multimodal 3D MRI brain tumor segmentation,” in Brainlesion: Glioma, Multiple Sclerosis, Stroke and Traumatic Brain Injuries, Cham, Switzerland: Springer, 2022, pp. 232–241, doi: 10.1007/978-3-031-09002-8_21. Open paper ↗ BraTS segmentation needs accurate multimodal 3D models while benefiting from better initialization and representation learning. Modified TransBTS, nnU-Net, and ensemble strategy with self-supervised pretraining elements. BraTS 2021 validation set; reported Dice scores of 0.8496 ET, 0.8698 TC, and 0.9256 WT. Hybrid CNN–Transformer and nnU-Net ensembles can improve BraTS tumor subregion segmentation. Brain-MRI-specific; connects transformer segmentation with self-supervised pretraining. Ensemble complexity and compute cost may limit real-time deployment. Directly supports the survey’s SSL + transformer direction. Can similar gains be achieved with a single efficient model rather than an ensemble?">
+<td class="year">2022</td>
+<td><span class="focus">Self-supervised pretraining with CNN–Transformer ensembles</span></td>
+<td class="citation-cell"><a class="paper-link" href="https://dl.acm.org/doi/10.1007/978-3-031-09002-8_21" rel="noopener noreferrer" target="_blank">[20] M. Dobko, D.-I. Kolinko, O. Viniavskyi, and Y. Yelisieiev, “Combining CNNs with transformer for multimodal 3D MRI brain tumor segmentation,” in Brainlesion: Glioma, Multiple Sclerosis, Stroke and Traumatic Brain Injuries, Cham, Switzerland: Springer, 2022, pp. 232–241, doi: 10.1007/978-3-031-09002-8_21.</a><a class="open-chip" href="https://dl.acm.org/doi/10.1007/978-3-031-09002-8_21" rel="noopener noreferrer" target="_blank">Open paper ↗</a></td>
+<td>BraTS segmentation needs accurate multimodal 3D models while benefiting from better initialization and representation learning.</td>
+<td>Modified TransBTS, nnU-Net, and ensemble strategy with self-supervised pretraining elements.</td>
+<td>BraTS 2021 validation set; reported Dice scores of 0.8496 ET, 0.8698 TC, and 0.9256 WT.</td>
+<td>Hybrid CNN–Transformer and nnU-Net ensembles can improve BraTS tumor subregion segmentation.</td>
+<td>Brain-MRI-specific; connects transformer segmentation with self-supervised pretraining.</td>
+<td>Ensemble complexity and compute cost may limit real-time deployment.</td>
+<td>Directly supports the survey’s SSL + transformer direction.</td>
+<td>Can similar gains be achieved with a single efficient model rather than an ensemble?</td>
+</tr>
+<tr data-search="2021 CNN–Transformer brain tumor segmentation [19] W. Wang, C. Chen, M. Ding, J. Li, H. Yu, and S. Zha, “TransBTS: Multimodal brain tumor segmentation using transformer,” in Medical Image Computing and Computer Assisted Intervention – MICCAI 2021, 2021, doi: 10.1007/978-3-030-87193-2_11. Open paper ↗ CNNs capture local features but may struggle with long-range dependencies in 3D multimodal brain tumor MRI. 3D CNN encoder for local volumetric features, transformer bottleneck for global context, and decoder for dense segmentation. BraTS 2019 and BraTS 2020 multimodal brain tumor MRI datasets. Hybrid CNN–Transformer modeling achieved competitive or higher segmentation performance than prior 3D methods. Brain-MRI-specific; foundational CNN–Transformer paper for BraTS segmentation. Transformer component increases computational cost; requires labeled multimodal inputs. Core method anchor for transformer-based brain MRI segmentation in the survey. Can transformer context be retained while improving speed and low-label robustness?">
+<td class="year">2021</td>
+<td><span class="focus">CNN–Transformer brain tumor segmentation</span></td>
+<td class="citation-cell"><a class="paper-link" href="https://dl.acm.org/doi/abs/10.1007/978-3-030-87193-2_11" rel="noopener noreferrer" target="_blank">[19] W. Wang, C. Chen, M. Ding, J. Li, H. Yu, and S. Zha, “TransBTS: Multimodal brain tumor segmentation using transformer,” in Medical Image Computing and Computer Assisted Intervention – MICCAI 2021, 2021, doi: 10.1007/978-3-030-87193-2_11.</a><a class="open-chip" href="https://dl.acm.org/doi/abs/10.1007/978-3-030-87193-2_11" rel="noopener noreferrer" target="_blank">Open paper ↗</a></td>
+<td>CNNs capture local features but may struggle with long-range dependencies in 3D multimodal brain tumor MRI.</td>
+<td>3D CNN encoder for local volumetric features, transformer bottleneck for global context, and decoder for dense segmentation.</td>
+<td>BraTS 2019 and BraTS 2020 multimodal brain tumor MRI datasets.</td>
+<td>Hybrid CNN–Transformer modeling achieved competitive or higher segmentation performance than prior 3D methods.</td>
+<td>Brain-MRI-specific; foundational CNN–Transformer paper for BraTS segmentation.</td>
+<td>Transformer component increases computational cost; requires labeled multimodal inputs.</td>
+<td>Core method anchor for transformer-based brain MRI segmentation in the survey.</td>
+<td>Can transformer context be retained while improving speed and low-label robustness?</td>
+</tr>
+</tbody>
+</table>
+</div>
 </section>
 <section class="area-section" id="area-4">
-  <div class="section-head">
-    <div>
-      <p class="eyebrow">Area 4</p>
-      <h2>Graph-Based, Benchmark Dataset, and Evaluation Foundations</h2>
-      <p>Graph reasoning, public benchmarks, metastasis datasets, and evaluation foundations for brain MRI segmentation.</p>
-    </div>
-    <span class="section-count">5 papers</span>
-  </div>
-  <div class="table-wrap">
-    <table aria-label="Area 4 — Graph-Based, Benchmark Dataset, and Evaluation Foundations">
-      <thead>
-        <tr>
-          <th class="year-col">Year</th>
-          <th class="focus-col">Focus</th>
-          <th class="citation-col">Bibliography / citation in IEEE format</th>
-          <th class="problem-col">Research problem addressed</th>
-          <th class="method-col">Core methodology / model / experimental design</th>
-          <th class="dataset-col">Dataset or experimental setup / best results achieved</th>
-          <th class="findings-col">Key findings / results</th>
-          <th class="strengths-col">Strengths / contributions</th>
-          <th class="limitations-col">Limitations / gaps</th>
-          <th class="relevance-col">Relevance to proposed research</th>
-          <th class="critical-col">Critical observations / questions</th>
-        </tr>
-      </thead>
-      <tbody>
-<tr data-search="21 Area 4 — Graph-Based, Benchmark Dataset, and Evaluation Foundations 2024 Brain metastasis MRI dataset [21] J. D. Rudie, D. A. Weiss, J. B. Colby, et al., “The University of California San Francisco brain metastases stereotactic radiosurgery MRI dataset,” Scientific Data, 2024. Public datasets for brain metastasis segmentation are limited despite the clinical importance of detecting small and multiple lesions. Public multimodal brain MRI dataset with expert voxelwise metastasis annotations and nnU-Net benchmarking. 560 brain MRI examinations from 412 patients with 5,136 annotated brain metastases. Provided a large clinically rich benchmark for brain metastasis detection and segmentation. Brain-MRI-specific; many lesions; useful external validation beyond glioma. Single-institution dataset and metastasis-specific imaging workflow. Supports generalization testing beyond standard glioma BraTS data. Can a model trained on glioma data detect small metastases with acceptable lesion-wise sensitivity?">
-      <td class="year">2024</td>
-      <td><span class="focus">Brain metastasis MRI dataset</span></td>
-      <td class="citation-cell"><a class="paper-link" href="https://pmc.ncbi.nlm.nih.gov/articles/PMC10982817/" target="_blank" rel="noopener noreferrer">[21] J. D. Rudie, D. A. Weiss, J. B. Colby, et al., “The University of California San Francisco brain metastases stereotactic radiosurgery MRI dataset,” Scientific Data, 2024.</a><a class="open-chip" href="https://pmc.ncbi.nlm.nih.gov/articles/PMC10982817/" target="_blank" rel="noopener noreferrer">Open paper ↗</a></td>
-      <td>Public datasets for brain metastasis segmentation are limited despite the clinical importance of detecting small and multiple lesions.</td>
-      <td>Public multimodal brain MRI dataset with expert voxelwise metastasis annotations and nnU-Net benchmarking.</td>
-      <td>560 brain MRI examinations from 412 patients with 5,136 annotated brain metastases.</td>
-      <td>Provided a large clinically rich benchmark for brain metastasis detection and segmentation.</td>
-      <td>Brain-MRI-specific; many lesions; useful external validation beyond glioma.</td>
-      <td>Single-institution dataset and metastasis-specific imaging workflow.</td>
-      <td>Supports generalization testing beyond standard glioma BraTS data.</td>
-      <td>Can a model trained on glioma data detect small metastases with acceptable lesion-wise sensitivity?</td>
-    </tr>
-<tr data-search="22 Area 4 — Graph-Based, Benchmark Dataset, and Evaluation Foundations 2024 Brain metastasis challenge benchmark [22] A. W. Moawad, A. Janas, U. Baid, et al., “The Brain Tumor Segmentation (BraTS-METS) Challenge 2023: Brain metastasis segmentation on pre-treatment MRI,” arXiv:2306.00838, 2023/2024. Brain metastasis segmentation requires lesion-wise evaluation because small-lesion false negatives are clinically important. BraTS-METS challenge design with stepwise annotations, lesion-wise Dice/HD95, and false-positive/false-negative penalties. Eight international datasets with 1,303 studies and public train/validation/test splits. Highlighted small-lesion false negatives and registration/mask issues as key failure modes. Brain-MRI-specific; clinically meaningful lesion-wise evaluation. Segmentation remains difficult for small lesions; rankings depend on metric design. Guides evaluation criteria for clinically realistic brain MRI segmentation. Should future evaluation prioritize voxel overlap, lesion detection, boundary accuracy, or all three together?">
-      <td class="year">2024</td>
-      <td><span class="focus">Brain metastasis challenge benchmark</span></td>
-      <td class="citation-cell"><a class="paper-link" href="https://arxiv.org/pdf/2306.00838" target="_blank" rel="noopener noreferrer">[22] A. W. Moawad, A. Janas, U. Baid, et al., “The Brain Tumor Segmentation (BraTS-METS) Challenge 2023: Brain metastasis segmentation on pre-treatment MRI,” arXiv:2306.00838, 2023/2024.</a><a class="open-chip" href="https://arxiv.org/pdf/2306.00838" target="_blank" rel="noopener noreferrer">Open paper ↗</a></td>
-      <td>Brain metastasis segmentation requires lesion-wise evaluation because small-lesion false negatives are clinically important.</td>
-      <td>BraTS-METS challenge design with stepwise annotations, lesion-wise Dice/HD95, and false-positive/false-negative penalties.</td>
-      <td>Eight international datasets with 1,303 studies and public train/validation/test splits.</td>
-      <td>Highlighted small-lesion false negatives and registration/mask issues as key failure modes.</td>
-      <td>Brain-MRI-specific; clinically meaningful lesion-wise evaluation.</td>
-      <td>Segmentation remains difficult for small lesions; rankings depend on metric design.</td>
-      <td>Guides evaluation criteria for clinically realistic brain MRI segmentation.</td>
-      <td>Should future evaluation prioritize voxel overlap, lesion detection, boundary accuracy, or all three together?</td>
-    </tr>
-<tr data-search="23 Area 4 — Graph-Based, Benchmark Dataset, and Evaluation Foundations 2023 Graph attention brain tumor segmentation [23] D. Patel, D. Patel, R. Saxena, and T. Akilan, “Multi-class brain tumor segmentation using graph attention network,” arXiv:2302.05598, 2023. CNN and transformer models may underuse explicit region-to-region relationships in volumetric brain MRI. Constructs region adjacency graphs from MRI segmentation representations and applies graph attention networks for multiclass tumor segmentation. BraTS benchmark datasets including BraTS 2021 validation. Reported competitive Dice and HD95 results with improvement over a GNN baseline. Brain-tumor-specific; directly anchors the graph/relational modeling direction. Graph construction quality strongly affects performance; integration with end-to-end pipelines remains challenging. Core paper for the proposed SSL + segmentation + graph reasoning framework. What is the best graph node: voxel, supervoxel, tumor subregion, modality feature, or anatomical region?">
-      <td class="year">2023</td>
-      <td><span class="focus">Graph attention brain tumor segmentation</span></td>
-      <td class="citation-cell"><a class="paper-link" href="https://arxiv.org/pdf/2302.05598" target="_blank" rel="noopener noreferrer">[23] D. Patel, D. Patel, R. Saxena, and T. Akilan, “Multi-class brain tumor segmentation using graph attention network,” arXiv:2302.05598, 2023.</a><a class="open-chip" href="https://arxiv.org/pdf/2302.05598" target="_blank" rel="noopener noreferrer">Open paper ↗</a></td>
-      <td>CNN and transformer models may underuse explicit region-to-region relationships in volumetric brain MRI.</td>
-      <td>Constructs region adjacency graphs from MRI segmentation representations and applies graph attention networks for multiclass tumor segmentation.</td>
-      <td>BraTS benchmark datasets including BraTS 2021 validation.</td>
-      <td>Reported competitive Dice and HD95 results with improvement over a GNN baseline.</td>
-      <td>Brain-tumor-specific; directly anchors the graph/relational modeling direction.</td>
-      <td>Graph construction quality strongly affects performance; integration with end-to-end pipelines remains challenging.</td>
-      <td>Core paper for the proposed SSL + segmentation + graph reasoning framework.</td>
-      <td>What is the best graph node: voxel, supervoxel, tumor subregion, modality feature, or anatomical region?</td>
-    </tr>
-<tr data-search="24 Area 4 — Graph-Based, Benchmark Dataset, and Evaluation Foundations 2021 BraTS 2021 benchmark [24] U. Baid, S. Ghodasara, S. Mohan, et al., “The RSNA-ASNR-MICCAI BraTS 2021 benchmark on brain tumor segmentation and radiogenomic classification,” arXiv:2107.02314, 2021. Brain tumor segmentation benchmarks needed larger multi-institutional data and clinically relevant molecular classification tasks. Large-scale challenge design for tumor subregion segmentation and MGMT promoter methylation classification. BraTS 2021 pre-operative baseline mpMRI from 2,040 patients. Expanded BraTS into a larger benchmark for segmentation and radiogenomic analysis. Large, multi-institutional, clinically relevant benchmark. Still challenge-curated; external clinical deployment requires additional validation. Provides modern benchmark context for comparing proposed algorithms. Should proposed models optimize only segmentation Dice, or also clinically relevant radiogenomic/downstream outcomes?">
-      <td class="year">2021</td>
-      <td><span class="focus">BraTS 2021 benchmark</span></td>
-      <td class="citation-cell"><a class="paper-link" href="https://arxiv.org/pdf/2107.02314" target="_blank" rel="noopener noreferrer">[24] U. Baid, S. Ghodasara, S. Mohan, et al., “The RSNA-ASNR-MICCAI BraTS 2021 benchmark on brain tumor segmentation and radiogenomic classification,” arXiv:2107.02314, 2021.</a><a class="open-chip" href="https://arxiv.org/pdf/2107.02314" target="_blank" rel="noopener noreferrer">Open paper ↗</a></td>
-      <td>Brain tumor segmentation benchmarks needed larger multi-institutional data and clinically relevant molecular classification tasks.</td>
-      <td>Large-scale challenge design for tumor subregion segmentation and MGMT promoter methylation classification.</td>
-      <td>BraTS 2021 pre-operative baseline mpMRI from 2,040 patients.</td>
-      <td>Expanded BraTS into a larger benchmark for segmentation and radiogenomic analysis.</td>
-      <td>Large, multi-institutional, clinically relevant benchmark.</td>
-      <td>Still challenge-curated; external clinical deployment requires additional validation.</td>
-      <td>Provides modern benchmark context for comparing proposed algorithms.</td>
-      <td>Should proposed models optimize only segmentation Dice, or also clinically relevant radiogenomic/downstream outcomes?</td>
-    </tr>
-<tr data-search="25 Area 4 — Graph-Based, Benchmark Dataset, and Evaluation Foundations 2015 BraTS benchmark foundation [25] B. H. Menze, A. Jakab, S. Bauer, et al., “The multimodal brain tumor image segmentation benchmark (BRATS),” IEEE Transactions on Medical Imaging, 2015. Brain tumor segmentation needed standardized data and evaluation protocols to compare algorithms fairly. Challenge framework using multimodal brain MRI scans, expert labels, simulated data, and standardized metrics. BRATS 2012/2013 multi-contrast low-grade and high-grade glioma MRI. Established BraTS as a central benchmark for brain tumor segmentation research. Foundational brain-MRI benchmark; enables reproducible comparison. Challenge data cannot represent all scanner/protocol and clinical workflow variability. Primary dataset anchor for the survey and proposed brain MRI segmentation work. How well do BraTS-trained models generalize to metastasis, pediatric, and non-Western patient cohorts?">
-      <td class="year">2015</td>
-      <td><span class="focus">BraTS benchmark foundation</span></td>
-      <td class="citation-cell"><a class="paper-link" href="https://pmc.ncbi.nlm.nih.gov/articles/PMC4833122/" target="_blank" rel="noopener noreferrer">[25] B. H. Menze, A. Jakab, S. Bauer, et al., “The multimodal brain tumor image segmentation benchmark (BRATS),” IEEE Transactions on Medical Imaging, 2015.</a><a class="open-chip" href="https://pmc.ncbi.nlm.nih.gov/articles/PMC4833122/" target="_blank" rel="noopener noreferrer">Open paper ↗</a></td>
-      <td>Brain tumor segmentation needed standardized data and evaluation protocols to compare algorithms fairly.</td>
-      <td>Challenge framework using multimodal brain MRI scans, expert labels, simulated data, and standardized metrics.</td>
-      <td>BRATS 2012/2013 multi-contrast low-grade and high-grade glioma MRI.</td>
-      <td>Established BraTS as a central benchmark for brain tumor segmentation research.</td>
-      <td>Foundational brain-MRI benchmark; enables reproducible comparison.</td>
-      <td>Challenge data cannot represent all scanner/protocol and clinical workflow variability.</td>
-      <td>Primary dataset anchor for the survey and proposed brain MRI segmentation work.</td>
-      <td>How well do BraTS-trained models generalize to metastasis, pediatric, and non-Western patient cohorts?</td>
-    </tr>
-      </tbody>
-    </table>
-  </div>
+<div class="section-head">
+<div>
+<p class="eyebrow">Area 4</p>
+<h2>Graph-Based, Benchmark Dataset, and Evaluation Foundations</h2>
+<p>Graph reasoning, public benchmarks, metastasis datasets, and evaluation foundations for brain MRI segmentation. Papers are ordered from newest to oldest within this area.</p>
+</div>
+<span class="section-count">5 papers</span>
+</div>
+<div class="table-wrap">
+<table aria-label="Area 4 — Graph-Based, Benchmark Dataset, and Evaluation Foundations">
+<thead>
+<tr>
+<th class="year-col">Year</th>
+<th class="focus-col">Focus</th>
+<th class="citation-col">Bibliography / citation in IEEE format</th>
+<th class="problem-col">Research problem addressed</th>
+<th class="method-col">Core methodology / model / experimental design</th>
+<th class="dataset-col">Dataset or experimental setup / best results achieved</th>
+<th class="findings-col">Key findings / results</th>
+<th class="strengths-col">Strengths / contributions</th>
+<th class="limitations-col">Limitations / gaps</th>
+<th class="relevance-col">Relevance to proposed research</th>
+<th class="critical-col">Critical observations / questions</th>
+</tr>
+</thead>
+<tbody>
+
+
+
+
+
+
+<tr data-search="2024 Brain metastasis MRI dataset [21] J. D. Rudie, R. Saluja, D. A. Weiss, P. Nedelec, E. Calabrese, J. B. Colby, B. Laguna, J. Mongan, S. Braunstein, C. P. Hess, et al., “The University of California San Francisco Brain Metastases Stereotactic Radiosurgery (UCSF-BMSR) MRI dataset,” Radiology: Artificial Intelligence, vol. 6, no. 2, Art. no. e230126, 2024, doi: 10.1148/ryai.230126. Open paper ↗ Public datasets for brain metastasis segmentation are limited despite the clinical importance of detecting small and multiple lesions. Public multimodal brain MRI dataset with expert voxelwise metastasis annotations and nnU-Net benchmarking. 560 brain MRI examinations from 412 patients with 5,136 annotated brain metastases. Provided a large clinically rich benchmark for brain metastasis detection and segmentation. Brain-MRI-specific; many lesions; useful external validation beyond glioma. Single-institution dataset and metastasis-specific imaging workflow. Supports generalization testing beyond standard glioma BraTS data. Can a model trained on glioma data detect small metastases with acceptable lesion-wise sensitivity?">
+<td class="year">2024</td>
+<td><span class="focus">Brain metastasis MRI dataset</span></td>
+<td class="citation-cell"><a class="paper-link" href="https://pubmed.ncbi.nlm.nih.gov/38381038/" rel="noopener noreferrer" target="_blank">[21] J. D. Rudie, R. Saluja, D. A. Weiss, P. Nedelec, E. Calabrese, J. B. Colby, B. Laguna, J. Mongan, S. Braunstein, C. P. Hess, et al., “The University of California San Francisco Brain Metastases Stereotactic Radiosurgery (UCSF-BMSR) MRI dataset,” Radiology: Artificial Intelligence, vol. 6, no. 2, Art. no. e230126, 2024, doi: 10.1148/ryai.230126.</a><a class="open-chip" href="https://pubmed.ncbi.nlm.nih.gov/38381038/" rel="noopener noreferrer" target="_blank">Open paper ↗</a></td>
+<td>Public datasets for brain metastasis segmentation are limited despite the clinical importance of detecting small and multiple lesions.</td>
+<td>Public multimodal brain MRI dataset with expert voxelwise metastasis annotations and nnU-Net benchmarking.</td>
+<td>560 brain MRI examinations from 412 patients with 5,136 annotated brain metastases.</td>
+<td>Provided a large clinically rich benchmark for brain metastasis detection and segmentation.</td>
+<td>Brain-MRI-specific; many lesions; useful external validation beyond glioma.</td>
+<td>Single-institution dataset and metastasis-specific imaging workflow.</td>
+<td>Supports generalization testing beyond standard glioma BraTS data.</td>
+<td>Can a model trained on glioma data detect small metastases with acceptable lesion-wise sensitivity?</td>
+</tr>
+<tr data-search="2024 Brain metastasis challenge benchmark [22] A. W. Moawad et al., “The Brain Tumor Segmentation–Metastases (BraTS-METS) Challenge 2023: Brain metastasis segmentation on pre-treatment MRI,” arXiv:2306.00838v3, Dec. 2024. Open paper ↗ Brain metastasis segmentation requires lesion-wise evaluation because small-lesion false negatives are clinically important. BraTS-METS challenge design with stepwise annotations, lesion-wise Dice/HD95, and false-positive/false-negative penalties. Eight international datasets with 1,303 studies and public train/validation/test splits. Highlighted small-lesion false negatives and registration/mask issues as key failure modes. Brain-MRI-specific; clinically meaningful lesion-wise evaluation. Segmentation remains difficult for small lesions; rankings depend on metric design. Guides evaluation criteria for clinically realistic brain MRI segmentation. Should future evaluation prioritize voxel overlap, lesion detection, boundary accuracy, or all three together?">
+<td class="year">2024</td>
+<td><span class="focus">Brain metastasis challenge benchmark</span></td>
+<td class="citation-cell"><a class="paper-link" href="https://pubmed.ncbi.nlm.nih.gov/37396600/" rel="noopener noreferrer" target="_blank">[22] A. W. Moawad et al., “The Brain Tumor Segmentation–Metastases (BraTS-METS) Challenge 2023: Brain metastasis segmentation on pre-treatment MRI,” arXiv:2306.00838v3, Dec. 2024.</a><a class="open-chip" href="https://pubmed.ncbi.nlm.nih.gov/37396600/" rel="noopener noreferrer" target="_blank">Open paper ↗</a></td>
+<td>Brain metastasis segmentation requires lesion-wise evaluation because small-lesion false negatives are clinically important.</td>
+<td>BraTS-METS challenge design with stepwise annotations, lesion-wise Dice/HD95, and false-positive/false-negative penalties.</td>
+<td>Eight international datasets with 1,303 studies and public train/validation/test splits.</td>
+<td>Highlighted small-lesion false negatives and registration/mask issues as key failure modes.</td>
+<td>Brain-MRI-specific; clinically meaningful lesion-wise evaluation.</td>
+<td>Segmentation remains difficult for small lesions; rankings depend on metric design.</td>
+<td>Guides evaluation criteria for clinically realistic brain MRI segmentation.</td>
+<td>Should future evaluation prioritize voxel overlap, lesion detection, boundary accuracy, or all three together?</td>
+</tr>
+<tr data-search="2023 Graph attention brain tumor segmentation [23] D. Patel, D. Patel, R. Saxena, and T. Akilan, “Multi-class brain tumor segmentation using graph attention network,” in Proc. 2023 8th International Conference on Signal and Image Processing (ICSIP), 2023, pp. 196–201, doi: 10.1109/ICSIP57908.2023.10270859. Open paper ↗ CNN and transformer models may underuse explicit region-to-region relationships in volumetric brain MRI. Constructs region adjacency graphs from MRI segmentation representations and applies graph attention networks for multiclass tumor segmentation. BraTS benchmark datasets including BraTS 2021 validation. Reported competitive Dice and HD95 results with improvement over a GNN baseline. Brain-tumor-specific; directly anchors the graph/relational modeling direction. Graph construction quality strongly affects performance; integration with end-to-end pipelines remains challenging. Core paper for the proposed SSL + segmentation + graph reasoning framework. What is the best graph node: voxel, supervoxel, tumor subregion, modality feature, or anatomical region?">
+<td class="year">2023</td>
+<td><span class="focus">Graph attention brain tumor segmentation</span></td>
+<td class="citation-cell"><a class="paper-link" href="https://ieeexplore.ieee.org/document/10270859" rel="noopener noreferrer" target="_blank">[23] D. Patel, D. Patel, R. Saxena, and T. Akilan, “Multi-class brain tumor segmentation using graph attention network,” in Proc. 2023 8th International Conference on Signal and Image Processing (ICSIP), 2023, pp. 196–201, doi: 10.1109/ICSIP57908.2023.10270859.</a><a class="open-chip" href="https://ieeexplore.ieee.org/document/10270859" rel="noopener noreferrer" target="_blank">Open paper ↗</a></td>
+<td>CNN and transformer models may underuse explicit region-to-region relationships in volumetric brain MRI.</td>
+<td>Constructs region adjacency graphs from MRI segmentation representations and applies graph attention networks for multiclass tumor segmentation.</td>
+<td>BraTS benchmark datasets including BraTS 2021 validation.</td>
+<td>Reported competitive Dice and HD95 results with improvement over a GNN baseline.</td>
+<td>Brain-tumor-specific; directly anchors the graph/relational modeling direction.</td>
+<td>Graph construction quality strongly affects performance; integration with end-to-end pipelines remains challenging.</td>
+<td>Core paper for the proposed SSL + segmentation + graph reasoning framework.</td>
+<td>What is the best graph node: voxel, supervoxel, tumor subregion, modality feature, or anatomical region?</td>
+</tr>
+<tr data-search="2021 BraTS 2021 benchmark [24] U. Baid, S. Ghodasara, S. Mohan, et al., “The RSNA-ASNR-MICCAI BraTS 2021 benchmark on brain tumor segmentation and radiogenomic classification,” arXiv:2107.02314, 2021. Open paper ↗ Brain tumor segmentation benchmarks needed larger multi-institutional data and clinically relevant molecular classification tasks. Large-scale challenge design for tumor subregion segmentation and MGMT promoter methylation classification. BraTS 2021 pre-operative baseline mpMRI from 2,040 patients. Expanded BraTS into a larger benchmark for segmentation and radiogenomic analysis. Large, multi-institutional, clinically relevant benchmark. Still challenge-curated; external clinical deployment requires additional validation. Provides modern benchmark context for comparing proposed algorithms. Should proposed models optimize only segmentation Dice, or also clinically relevant radiogenomic/downstream outcomes?">
+<td class="year">2021</td>
+<td><span class="focus">BraTS 2021 benchmark</span></td>
+<td class="citation-cell"><a class="paper-link" href="https://arxiv.org/pdf/2107.02314" rel="noopener noreferrer" target="_blank">[24] U. Baid, S. Ghodasara, S. Mohan, et al., “The RSNA-ASNR-MICCAI BraTS 2021 benchmark on brain tumor segmentation and radiogenomic classification,” arXiv:2107.02314, 2021.</a><a class="open-chip" href="https://arxiv.org/pdf/2107.02314" rel="noopener noreferrer" target="_blank">Open paper ↗</a></td>
+<td>Brain tumor segmentation benchmarks needed larger multi-institutional data and clinically relevant molecular classification tasks.</td>
+<td>Large-scale challenge design for tumor subregion segmentation and MGMT promoter methylation classification.</td>
+<td>BraTS 2021 pre-operative baseline mpMRI from 2,040 patients.</td>
+<td>Expanded BraTS into a larger benchmark for segmentation and radiogenomic analysis.</td>
+<td>Large, multi-institutional, clinically relevant benchmark.</td>
+<td>Still challenge-curated; external clinical deployment requires additional validation.</td>
+<td>Provides modern benchmark context for comparing proposed algorithms.</td>
+<td>Should proposed models optimize only segmentation Dice, or also clinically relevant radiogenomic/downstream outcomes?</td>
+</tr>
+<tr data-search="2015 BraTS benchmark foundation [25] B. H. Menze, A. Jakab, S. Bauer, et al., “The multimodal brain tumor image segmentation benchmark (BRATS),” IEEE Transactions on Medical Imaging, vol. 34, no. 10, pp. 1993–2024, Oct. 2015, doi: 10.1109/TMI.2014.2377694. Open paper ↗ Brain tumor segmentation needed standardized data and evaluation protocols to compare algorithms fairly. Challenge framework using multimodal brain MRI scans, expert labels, simulated data, and standardized metrics. BRATS 2012/2013 multi-contrast low-grade and high-grade glioma MRI. Established BraTS as a central benchmark for brain tumor segmentation research. Foundational brain-MRI benchmark; enables reproducible comparison. Challenge data cannot represent all scanner/protocol and clinical workflow variability. Primary dataset anchor for the survey and proposed brain MRI segmentation work. How well do BraTS-trained models generalize to metastasis, pediatric, and non-Western patient cohorts?">
+<td class="year">2015</td>
+<td><span class="focus">BraTS benchmark foundation</span></td>
+<td class="citation-cell"><a class="paper-link" href="https://pmc.ncbi.nlm.nih.gov/articles/PMC4833122/" rel="noopener noreferrer" target="_blank">[25] B. H. Menze, A. Jakab, S. Bauer, et al., “The multimodal brain tumor image segmentation benchmark (BRATS),” IEEE Transactions on Medical Imaging, vol. 34, no. 10, pp. 1993–2024, Oct. 2015, doi: 10.1109/TMI.2014.2377694.</a><a class="open-chip" href="https://pmc.ncbi.nlm.nih.gov/articles/PMC4833122/" rel="noopener noreferrer" target="_blank">Open paper ↗</a></td>
+<td>Brain tumor segmentation needed standardized data and evaluation protocols to compare algorithms fairly.</td>
+<td>Challenge framework using multimodal brain MRI scans, expert labels, simulated data, and standardized metrics.</td>
+<td>BRATS 2012/2013 multi-contrast low-grade and high-grade glioma MRI.</td>
+<td>Established BraTS as a central benchmark for brain tumor segmentation research.</td>
+<td>Foundational brain-MRI benchmark; enables reproducible comparison.</td>
+<td>Challenge data cannot represent all scanner/protocol and clinical workflow variability.</td>
+<td>Primary dataset anchor for the survey and proposed brain MRI segmentation work.</td>
+<td>How well do BraTS-trained models generalize to metastasis, pediatric, and non-Western patient cohorts?</td>
+</tr>
+</tbody>
+</table>
+</div>
 </section>
-  <p class="footer">Prepared as a committee-facing reading matrix. Each IEEE-formatted citation opens an official paper page, publisher page, PubMed/PMC page, or arXiv source in a new browser tab.</p>
+<p class="footer">Prepared as a committee-facing reading matrix. Each IEEE-formatted citation opens an official paper, publisher, PubMed/PMC, IEEE Xplore, DOI, or arXiv source in a new browser tab.</p>
 </main>
 <script>
 const search = document.getElementById('search');
